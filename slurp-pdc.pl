@@ -126,7 +126,7 @@ PDC repo and outputs three files
 =back
 
 These may need futzing with, depending on the downstream YAML parser, because
-of inconsistent escaping of single quotes (apostrophes, e.g.) in the GDC source.
+of inconsistent escaping of single quotes (apostrophes, e.g.) in the source.
 
 Because the Term definitions have many issues of this type, this
 script just url-escapes the term definitions before writing them to
@@ -138,5 +138,6 @@ to unescape these before using the text downstream.
 Use L<cpanminus|https://cpanmin.us> as follows to install dependencies:
 
  $ cpanm JSON::ize URI::Escape YAML::XS YAML::PP JSON::XS Try::Tiny
+ $ cpanm https://github.com/CBIIT/gdc-model/raw/main/gdcdict/GDC-Dict-0.5.tar.gz
 
 =cut
