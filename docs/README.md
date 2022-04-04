@@ -20,6 +20,7 @@ Zoom to Node: <select id="node_select">
 <a href="./model-desc/pdc-model.svg">SVG file (in view above)</a>
 <p>
 <a href="./model-desc">Additional model files</a>
+<div id='graph' style='display:off;'>
 <svg width="2612pt" height="7756pt"
  viewBox="0.00 0.00 2612.00 7756.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 7752)">
@@ -1647,3 +1648,4 @@ Zoom to Node: <select id="node_select">
 </g>
 </g>
 </svg>
+</div>
