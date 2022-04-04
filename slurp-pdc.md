@@ -10,7 +10,7 @@ slurp-pdc.pl - Create MDF representing PDC model in PDC-Public repo
 
 ## DESCRIPTION
 
-`slurp-gdc.pl` reads YAML "Gen3" schema configuration files as provided in
+`slurp-pdc.pl` reads YAML "Gen3" schema configuration files as provided in
 the open source [repo](https://github.com/esacinc/PDC-Public.git), and 
 converts it into [Model Description File](https://github.com/CBIIT/bento-mdf)
 format. Specifically, by default, it reads from a submodule version of the
