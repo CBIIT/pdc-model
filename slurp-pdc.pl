@@ -1,9 +1,7 @@
 use lib "../gdc-model/gdcdict/lib";
 use GDC::Dict;
 use JSON::ize;
-use URI::Escape;
 use YAML::XS;
-#use Tie::IxHash;
 use strict;
 
 $ENV{SKIPYAML} = qr/(_def|metaschema|_term|dictionary)/;
@@ -73,14 +71,15 @@ for my $prop (sort keys %props) {
   }
 }
 
-
 for my $t (sort {$a->value cmp $b->value} $dict->terms) {
+  my $desc = $t->desc;
+  $desc =~ s/'/\\'/g;
   $terms->{Terms}{$t->value} = {
     Origin => $t->source,
     Code => $t->source_id,
     Version => $t->source_version,
     Value => $t->{term},
-    Definition => uri_escape($t->desc),
+    Definition => $desc,
   }
 }
 
@@ -127,11 +126,7 @@ PDC repo and outputs three files
 
 These may need futzing with, depending on the downstream YAML parser, because
 of inconsistent escaping of single quotes (apostrophes, e.g.) in the source.
-
-Because the Term definitions have many issues of this type, this
-script just url-escapes the term definitions before writing them to
-the term.yaml file (see L<./model-desc/gdc-model-terms.yaml>). Need
-to unescape these before using the text downstream.
+An attempt is made to neutralize all single quotes by escaping (\') them.
 
 =head1 DEPENDENCIES
 

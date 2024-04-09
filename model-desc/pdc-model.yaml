@@ -1,5 +1,6 @@
 ---
 Handle: PDC
+Version: v1.5.6
 Nodes:
   aliquot:
     Props:
@@ -29,6 +30,7 @@ Nodes:
     - date
     - experiment_number
     - experiment_type
+    - folder_name
     - fraction
     - instrument
     - label
@@ -156,7 +158,6 @@ Nodes:
     - enneking_msts_tumor_site
     - esophageal_columnar_dysplasia_degree
     - esophageal_columnar_metaplasia_present
-    - external_case_id
     - figo_stage
     - figo_staging_edition_year
     - first_symptom_prior_to_diagnosis
@@ -302,7 +303,7 @@ Nodes:
     - md5sum
     - original_file_name
     - sha1
-  follow_up:
+  follow-up:
     Props:
     - adverse_event
     - adverse_event_grade
@@ -384,6 +385,8 @@ Nodes:
     - proteins
   gene_abundance:
     Props:
+    - aliquot_id
+    - aliquot_submitter_id
     - gene_abundance_id
     - gene_id
     - gene_name
@@ -434,8 +437,8 @@ Nodes:
     - unshared_precursor_area
   protocol:
     Props:
-    - one_d_chromatography_type
-    - two_d_chromatography_type
+    - 1d_chromatography_type
+    - 2d_chromatography_type
     - acquisition_type
     - alkylation_reagent
     - amount_on_column
@@ -642,119 +645,114 @@ Relationships:
     Ends:
     - Dst: aliquot
       Src: aliquot_run_metadata
-    Mul: many_to_one
-    Props: null
-    Req: true
+    Mul: ~
+    Props: ~
+    Req: 1
   of_analyte:
     Ends:
     - Dst: analyte
       Src: aliquot
-    Mul: many_to_one
-    Props: null
-    Req: true
+    Mul: ~
+    Props: ~
+    Req: 1
   of_case:
     Ends:
     - Dst: case
       Src: family_history
-      Mul: one_to_one
-    - Dst: case
-      Src: follow_up
-      Mul: many_to_one
-    - Dst: case
-      Src: exposure
-      Mul: one_to_one
     - Dst: case
       Src: sample
-      Mul: many_to_one
-    - Dst: case
-      Src: diagnosis
-      Mul: many_to_one
     - Dst: case
       Src: demographic
-      Mul: one_to_one
+    - Dst: case
+      Src: follow-up
+    - Dst: case
+      Src: diagnosis
+    - Dst: case
+      Src: exposure
     Mul: many_to_one
-    Props: null
-    Req: true
+    Props: ~
+    Req: 1
   of_diagnosis:
     Ends:
     - Dst: diagnosis
-      Src: follow_up
-    - Dst: diagnosis
       Src: treatment
+    - Dst: diagnosis
+      Src: follow-up
     Mul: many_to_one
-    Props: null
+    Props: ~
+    Req: 1
   of_gene:
     Ends:
     - Dst: gene
-      Src: gene_abundance
-    - Dst: gene
       Src: protein_abundance
-    Mul: many_to_one
-    Props: null
-    Req: true
+    - Dst: gene
+      Src: gene_abundance
+    Mul: ~
+    Props: ~
+    Req: 1
   of_portion:
     Ends:
     - Dst: portion
       Src: analyte
-    Mul: many_to_one
-    Props: null
-    Req: true
+    Mul: ~
+    Props: ~
+    Req: 1
   of_program:
     Ends:
     - Dst: program
       Src: project
-    Mul: one_to_many
-    Props: null
-    Req: true
+    Mul: ~
+    Props: ~
+    Req: 1
   of_project:
     Ends:
     - Dst: project
-      Src: case
-    - Dst: project
       Src: study
-    Mul: many_to_one
-    Props: null
-    Req: true
+    - Dst: project
+      Src: case
+    Mul: ~
+    Props: ~
+    Req: 1
   of_sample:
     Ends:
     - Dst: sample
       Src: aliquot
     - Dst: sample
-      Src: portion
-    - Dst: sample
       Src: analyte
-    Mul: many_to_one
-    Props: null
-    Req: true
+    - Dst: sample
+      Src: portion
+    Mul: ~
+    Props: ~
+    Req: 1
   of_study:
     Ends:
     - Dst: study
+      Src: file
+    - Dst: study
       Src: protocol
-    - Dst: study
-      Src: gene_abundance
-    - Dst: study
-      Src: workflow_metadata
-    - Dst: study
-      Src: protein_abundance
     - Dst: study
       Src: publication
     - Dst: study
       Src: study_run_metadata
     - Dst: study
-      Src: file
-    Mul: many_to_one
-    Props: null
-    Req: true
+      Src: protein_abundance
+    - Dst: study
+      Src: workflow_metadata
+    - Dst: study
+      Src: gene_abundance
+    Mul: ~
+    Props: ~
+    Req: 1
   of_study_run_metadata:
     Ends:
     - Dst: study_run_metadata
-      Src: aliquot_run_metadata
+      Src: file
     - Dst: study_run_metadata
-      Src: gene_abundance
+      Src: aliquot_run_metadata
     - Dst: study_run_metadata
       Src: protein_abundance
     - Dst: study_run_metadata
-      Src: file
-    Mul: many_to_one
-    Props: null
-    Req: true
+      Src: gene_abundance
+    Mul: ~
+    Props: ~
+    Req: 1
