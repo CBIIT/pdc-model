@@ -1286,6 +1286,8 @@ PropDefinitions:
     Type: string
   analyte_volume:
     Type: number
+  analytical_technique:
+    Type: string
   anaplasia_present:
     Enum:
     - Yes
@@ -1780,6 +1782,10 @@ PropDefinitions:
     Enum:
     - 1
     - 2
+  chromatography_instrument_make:
+    Type: string
+  chromatography_instrument_model:
+    Type: string
   chromosome:
     Type: string
   cigarettes_per_day:
@@ -2417,10 +2423,7 @@ PropDefinitions:
   diagnosis_id:
     Type: string
   diagnosis_is_primary_disease:
-    Enum:
-    - True
-    - False
-    - Not Reported
+    Type: boolean
   diagnosis_pathologically_confirmed:
     Enum:
     - Yes
@@ -2644,8 +2647,6 @@ PropDefinitions:
     - Intermediate
     - Unknown
     - Not Reported
-  embargo_date:
-    Type: date
   end_date:
     Type: date
   enneking_msts_grade:
@@ -2753,6 +2754,8 @@ PropDefinitions:
     - Tobacco
     - Wood Dust
   external_case_id:
+    Type: string
+  extraction_method:
     Type: string
   eye_color:
     Enum:
@@ -3398,12 +3401,16 @@ PropDefinitions:
     - Thermo Orbitrap Fusion Lumos
   intermediate_dimension:
     Type: number
+  internal_standards:
+    Type: string
   international_prognostic_index:
     Enum:
     - Low Risk
     - Low-Intermediate Risk
     - High-Intermediate Risk
     - High Risk
+  ionization_mode:
+    Type: string
   irs_group:
     Enum:
     - Group I
@@ -3443,6 +3450,8 @@ PropDefinitions:
     - TMT6
     - TMT10
     - TMT11
+    - TMT16
+    - TMT18
     - '180'
     - AQUA
     - ICAT
@@ -8267,6 +8276,11 @@ PropDefinitions:
     - Label Free
     - iTRAQ
     - TMT
+  protocol.polarity:
+    Enum:
+    - positive
+    - negative
+    - postive/negative
   protocol.program_id:
     Type: string
   protocol.program_submitter_id:
@@ -8330,6 +8344,12 @@ PropDefinitions:
     Type: integer
   recist_targeted_regions_sum:
     Type: number
+  reconstitution_solvent:
+    Type: string
+  reconstitution_solvent_volume:
+    Type: number
+  reconstitution_volume_uom:
+    Type: string
   reflux_treatment_type:
     Enum:
     - Antacids
@@ -8807,6 +8827,7 @@ PropDefinitions:
     - Next Generation Cancer Model Expanded Under Non-conforming Conditions
     - Mixed Adherent Suspension
     - Saliva
+    - Serum
   sample_type_id:
     Enum:
     - '01'
@@ -9270,6 +9291,10 @@ PropDefinitions:
     Type: string
   study_run_metadata.operator:
     Type: string
+  study_run_metadata.polarity:
+    Enum:
+    - positive
+    - negative
   study_run_metadata.protocol_id:
     Type: string
   study_run_metadata.protocol_submitter_id:
@@ -14230,6 +14255,20 @@ PropDefinitions:
   tmt_131:
     Type: string
   tmt_131c:
+    Type: string
+  tmt_132c:
+    Type: string
+  tmt_132n:
+    Type: string
+  tmt_133c:
+    Type: string
+  tmt_133n:
+    Type: string
+  tmt_134c:
+    Type: string
+  tmt_134n:
+    Type: string
+  tmt_135n:
     Type: string
   tobacco_smoking_onset_year:
     Type: integer
