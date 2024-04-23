@@ -1,3 +1,3 @@
-[submodule "PDC-Public"]
+[submodule "pdc-public"]
 	path = pdc-public
-	url = https://github.com/esacinc/PDC-Public.git
+	url = https://github.com/esacinc/PDC-Public
