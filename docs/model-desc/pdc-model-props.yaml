@@ -1,13 +1,13 @@
 ---
 PropDefinitions:
-  one_d_chromatography_type:
+  1d_chromatography_type:
     Enum:
     - RPLC
     - bRPLC
     - bRPLC (pH 7.5)
     - bRPLC (pH 10)
     - SCX
-  two_d_chromatography_type:
+  2d_chromatography_type:
     Enum:
     - RPLC
     - UHPLC
@@ -1200,6 +1200,8 @@ PropDefinitions:
     Type: string
   aliquot_run_metadata.experiment_type:
     Type: string
+  aliquot_run_metadata.folder_name:
+    Type: string
   aliquot_run_metadata.fraction:
     Type: string
   aliquot_run_metadata.instrument:
@@ -1284,6 +1286,8 @@ PropDefinitions:
     Type: string
   analyte_volume:
     Type: number
+  analytical_technique:
+    Type: string
   anaplasia_present:
     Enum:
     - Yes
@@ -1698,8 +1702,6 @@ PropDefinitions:
     Type: string
   case.case_submitter_id:
     Type: string
-  case.external_case_id:
-    Type: string
   case.pool:
     Enum:
     - Yes
@@ -1780,6 +1782,10 @@ PropDefinitions:
     Enum:
     - 1
     - 2
+  chromatography_instrument_make:
+    Type: string
+  chromatography_instrument_model:
+    Type: string
   chromosome:
     Type: string
   cigarettes_per_day:
@@ -1835,7 +1841,7 @@ PropDefinitions:
   colon_polyps_history:
     Type: string
   column_inner_diameter:
-    Type: cm
+    Type: number
   column_inner_diameter_uom:
     Type: string
   column_length:
@@ -2334,7 +2340,7 @@ PropDefinitions:
   days_to_diagnosis:
     Type: integer
   days_to_follow_up:
-    Req: true
+    Req: 1
     Type: integer
   days_to_hiv_diagnosis:
     Type: string
@@ -2401,8 +2407,6 @@ PropDefinitions:
     Type: string
   diagnosis.days_to_recurrence:
     Type: number
-  diagnosis.external_case_id:
-    Type: TBD
   diagnosis.hpv_positive_type:
     Type: string
   diagnosis.progression_or_recurrence:
@@ -2419,10 +2423,7 @@ PropDefinitions:
   diagnosis_id:
     Type: string
   diagnosis_is_primary_disease:
-    Enum:
-    - True
-    - False
-    - Not Reported
+    Type: boolean
   diagnosis_pathologically_confirmed:
     Enum:
     - Yes
@@ -2453,6 +2454,7 @@ PropDefinitions:
     - V8-DE
     - V8-E
     - Lys-C
+    - Trypsin
   disease_response:
     Enum:
     - AJ-Adjuvant Therapy
@@ -2532,6 +2534,7 @@ PropDefinitions:
     - Nerve Sheath Tumors
     - Neuroepitheliomatous Neoplasms
     - Nevi and Melanomas
+    - Non-Clear Cell Renal Cell Carcinoma
     - Odontogenic Tumors
     - Osseous and Chondromatous Neoplasms
     - Other Hematologic Disorders
@@ -2644,8 +2647,6 @@ PropDefinitions:
     - Intermediate
     - Unknown
     - Not Reported
-  embargo_date:
-    Type: date
   end_date:
     Type: date
   enneking_msts_grade:
@@ -2752,6 +2753,10 @@ PropDefinitions:
     - Smoke
     - Tobacco
     - Wood Dust
+  external_case_id:
+    Type: string
+  extraction_method:
+    Type: string
   eye_color:
     Enum:
     - Amber
@@ -2821,7 +2826,7 @@ PropDefinitions:
   file_name:
     Type: string
   file_size:
-    Type: string
+    Type: number
   file_type:
     Type: string
   first_symptom_prior_to_diagnosis:
@@ -2834,15 +2839,13 @@ PropDefinitions:
     - Visual Changes
     - Unknown
     - Not Reported
-  folder_name:
-    Type: string
-  follow_up.bmi:
+  follow-up.bmi:
     Type: number
-  follow_up.days_to_recurrence:
+  follow-up.days_to_recurrence:
     Type: integer
-  follow_up.height:
+  follow-up.height:
     Type: number
-  follow_up.hpv_positive_type:
+  follow-up.hpv_positive_type:
     Enum:
     - '16'
     - '18'
@@ -2867,13 +2870,13 @@ PropDefinitions:
     - Other
     - Unknown
     - Not Reported
-  follow_up.progression_or_recurrence:
+  follow-up.progression_or_recurrence:
     Enum:
     - Yes
     - No
     - Unknown
     - Not Reported
-  follow_up.weight:
+  follow-up.weight:
     Type: number
   fraction_number:
     Type: string
@@ -2903,6 +2906,10 @@ PropDefinitions:
   gene.gene_id:
     Type: string
   gene.gene_name:
+    Type: string
+  gene_abundance.aliquot_id:
+    Type: string
+  gene_abundance.aliquot_submitter_id:
     Type: string
   gene_abundance.gene_id:
     Type: string
@@ -3176,6 +3183,7 @@ PropDefinitions:
     - 3200 QTRAP
     - 3500 QTRAP
     - 4000 QTRAP
+    - 4000 QTRAP
     - 4800 Plus MALDI TOF/TOF
     - 5800 TOF/TOF
     - API 100
@@ -3393,12 +3401,16 @@ PropDefinitions:
     - Thermo Orbitrap Fusion Lumos
   intermediate_dimension:
     Type: number
+  internal_standards:
+    Type: string
   international_prognostic_index:
     Enum:
     - Low Risk
     - Low-Intermediate Risk
     - High-Intermediate Risk
     - High Risk
+  ionization_mode:
+    Type: string
   irs_group:
     Enum:
     - Group I
@@ -3438,6 +3450,8 @@ PropDefinitions:
     - TMT6
     - TMT10
     - TMT11
+    - TMT16
+    - TMT18
     - '180'
     - AQUA
     - ICAT
@@ -5149,12 +5163,12 @@ PropDefinitions:
     - Acquired tufted hemangioma
     - Acral lentiginous melanoma, malignant
     - ACTH-producing tumor
-    - Acute basophilic leukaemia
+    - Acute basophilic leukemia
     - Acute bilineal leukemia
     - Acute biphenotypic leukemia
     - Acute erythremia
     - Acute erythremic myelosis
-    - Acute erythroid leukaemia
+    - Acute erythroid leukemia
     - Acute granulocytic leukemia
     - Acute leukemia, Burkitt type
     - Acute leukemia, NOS
@@ -5166,7 +5180,7 @@ PropDefinitions:
     - Acute lymphoblastic leukemia, precursor cell type
     - Acute lymphocytic leukemia
     - Acute lymphoid leukemia
-    - Acute megakaryoblastic leukaemia
+    - Acute megakaryoblastic leukemia
     - Acute mixed lineage leukemia
     - Acute monoblastic and monocytic leukemia
     - Acute monoblastic leukemia
@@ -5175,7 +5189,7 @@ PropDefinitions:
     - Acute myelocytic leukemia
     - Acute myelofibrosis
     - Acute myelogenous leukemia
-    - Acute myeloid leukaemia, t(8;21)(q22;q22)
+    - Acute myeloid leukemia, t(8;21)(q22;q22)
     - Acute myeloid leukemia (megakaryoblastic) with t(1;22)(p13;q13); RBM15-MKL1
     - Acute myeloid leukemia with abnormal marrow eosinophils (includes all variants)
     - Acute myeloid leukemia with inv(3)(q21q26.2) or t(3;3)(q21;q26.2); RPN1-EVI1
@@ -5208,8 +5222,8 @@ PropDefinitions:
     - Acute panmyelosis with myelofibrosis
     - Acute panmyelosis, NOS
     - Acute progressive histiocytosis X
-    - Acute promyelocytic leukaemia, PML-RAR-alpha
-    - Acute promyelocytic leukaemia, t(15;17)(q22;q11-12)
+    - Acute promyelocytic leukemia, PML-RAR-alpha
+    - Acute promyelocytic leukemia, t(15;17)(q22;q11-12)
     - Acute promyelocytic leukemia, NOS
     - Adamantinoma of long bones
     - Adamantinoma, malignant
@@ -5300,7 +5314,7 @@ PropDefinitions:
     - Aggressive angiomyxoma
     - Aggressive digital papillary adenoma
     - Aggressive fibromatosis
-    - Aggressive NK-cell leukaemia
+    - Aggressive NK-cell leukemia
     - Aggressive osteoblastoma
     - Aggressive systemic mastocytosis
     - Agnogenic myeloid metaplasia
@@ -6140,7 +6154,7 @@ PropDefinitions:
     - Gynandroblastoma
     - Haemangioblastoma
     - Haemangiosarcoma
-    - Hairy cell leukaemia variant
+    - Hairy cell leukemia variant
     - Hairy cell leukemia
     - Hairy cell leukemia variant
     - Hairy nevus
@@ -6629,7 +6643,7 @@ PropDefinitions:
     - Marginal zone B-cell lymphoma, NOS
     - Marginal zone lymphoma, NOS
     - Masculinovoblastoma
-    - Mast cell leukaemia
+    - Mast cell leukemia
     - Mast cell sarcoma
     - Mast cell tumor, NOS
     - Mastocytoma, NOS
@@ -7713,7 +7727,7 @@ PropDefinitions:
     - Unclassified tumor, malignant
     - Unclassified tumor, malignant, uncertain whether primary or metastatic
     - Unclassified tumor, uncertain whether benign or malignant
-    - Undifferentiated leukaemia
+    - Undifferentiated leukemia
     - Undifferentiated sarcoma
     - Unknown
     - Urachal carcinoma
@@ -8262,6 +8276,11 @@ PropDefinitions:
     - Label Free
     - iTRAQ
     - TMT
+  protocol.polarity:
+    Enum:
+    - positive
+    - negative
+    - postive/negative
   protocol.program_id:
     Type: string
   protocol.program_submitter_id:
@@ -8325,6 +8344,12 @@ PropDefinitions:
     Type: integer
   recist_targeted_regions_sum:
     Type: number
+  reconstitution_solvent:
+    Type: string
+  reconstitution_solvent_volume:
+    Type: number
+  reconstitution_volume_uom:
+    Type: string
   reflux_treatment_type:
     Enum:
     - Antacids
@@ -8802,6 +8827,7 @@ PropDefinitions:
     - Next Generation Cancer Model Expanded Under Non-conforming Conditions
     - Mixed Adherent Suspension
     - Saliva
+    - Serum
   sample_type_id:
     Enum:
     - '01'
@@ -9254,21 +9280,27 @@ PropDefinitions:
   study_run_metadata.condition:
     Type: string
   study_run_metadata.date:
-    Type: string
+    Type: date
   study_run_metadata.experiment_number:
     Type: integer
   study_run_metadata.experiment_type:
+    Type: string
+  study_run_metadata.folder_name:
     Type: string
   study_run_metadata.fraction:
     Type: string
   study_run_metadata.operator:
     Type: string
+  study_run_metadata.polarity:
+    Enum:
+    - positive
+    - negative
   study_run_metadata.protocol_id:
     Type: string
   study_run_metadata.protocol_submitter_id:
     Type: string
   study_run_metadata.replicate_number:
-    Type: string
+    Type: integer
   study_run_metadata.study_id:
     Type: string
   study_run_metadata.study_run_metadata_id:
@@ -14223,6 +14255,20 @@ PropDefinitions:
   tmt_131:
     Type: string
   tmt_131c:
+    Type: string
+  tmt_132c:
+    Type: string
+  tmt_132n:
+    Type: string
+  tmt_133c:
+    Type: string
+  tmt_133n:
+    Type: string
+  tmt_134c:
+    Type: string
+  tmt_134n:
+    Type: string
+  tmt_135n:
     Type: string
   tobacco_smoking_onset_year:
     Type: integer

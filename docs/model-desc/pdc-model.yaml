@@ -1,5 +1,6 @@
 ---
 Handle: PDC
+Version: 2.0.2
 Nodes:
   aliquot:
     Props:
@@ -29,6 +30,7 @@ Nodes:
     - date
     - experiment_number
     - experiment_type
+    - folder_name
     - fraction
     - instrument
     - label
@@ -156,7 +158,6 @@ Nodes:
     - enneking_msts_tumor_site
     - esophageal_columnar_dysplasia_degree
     - esophageal_columnar_metaplasia_present
-    - external_case_id
     - figo_stage
     - figo_staging_edition_year
     - first_symptom_prior_to_diagnosis
@@ -302,7 +303,7 @@ Nodes:
     - md5sum
     - original_file_name
     - sha1
-  follow_up:
+  follow-up:
     Props:
     - adverse_event
     - adverse_event_grade
@@ -384,6 +385,8 @@ Nodes:
     - proteins
   gene_abundance:
     Props:
+    - aliquot_id
+    - aliquot_submitter_id
     - gene_abundance_id
     - gene_id
     - gene_name
@@ -434,13 +437,16 @@ Nodes:
     - unshared_precursor_area
   protocol:
     Props:
-    - one_d_chromatography_type
-    - two_d_chromatography_type
+    - 1d_chromatography_type
+    - 2d_chromatography_type
     - acquisition_type
     - alkylation_reagent
     - amount_on_column
     - amount_on_column_uom
+    - analytical_technique
     - chromatography_dimensions_count
+    - chromatography_instrument_make
+    - chromatography_instrument_model
     - column_inner_diameter
     - column_inner_diameter_uom
     - column_length
@@ -455,11 +461,14 @@ Nodes:
     - enrichment
     - enrichment_strategy
     - experiment_type
+    - extraction_method
     - fractions_analyzed_count
     - gradient_length
     - gradient_length_uom
     - instrument_make
     - instrument_model
+    - internal_standards
+    - ionization_mode
     - isobaric_labeling_reagent
     - label_free_quantitation
     - labeled_quantitation
@@ -469,6 +478,7 @@ Nodes:
     - particle_size
     - particle_size_uom
     - particle_type
+    - polarity
     - program_id
     - program_submitter_id
     - protocol_date
@@ -476,6 +486,9 @@ Nodes:
     - protocol_name
     - protocol_submitter_id
     - quantitation_strategy
+    - reconstitution_solvent
+    - reconstitution_solvent_volume
+    - reconstitution_volume_uom
     - reporter_ion_ms_level
     - serial_number
     - starting_amount
@@ -534,7 +547,6 @@ Nodes:
     Props:
     - acquisition_type
     - analytical_fraction
-    - embargo_date
     - experiment_type
     - project_id
     - project_submitter_id
@@ -565,6 +577,7 @@ Nodes:
     - label_free
     - operator
     - plex_or_folder_name
+    - polarity
     - protocol_id
     - protocol_submitter_id
     - replicate_number
@@ -583,6 +596,13 @@ Nodes:
     - tmt_130n
     - tmt_131
     - tmt_131c
+    - tmt_132c
+    - tmt_132n
+    - tmt_133c
+    - tmt_133n
+    - tmt_134c
+    - tmt_134n
+    - tmt_135n
   treatment:
     Props:
     - chemo_concurrent_to_radiation
@@ -642,119 +662,114 @@ Relationships:
     Ends:
     - Dst: aliquot
       Src: aliquot_run_metadata
-    Mul: many_to_one
+    Mul: null
     Props: null
-    Req: true
+    Req: 1
   of_analyte:
     Ends:
     - Dst: analyte
       Src: aliquot
-    Mul: many_to_one
+    Mul: null
     Props: null
-    Req: true
+    Req: 1
   of_case:
     Ends:
     - Dst: case
       Src: family_history
-      Mul: one_to_one
     - Dst: case
-      Src: follow_up
-      Mul: many_to_one
-    - Dst: case
-      Src: exposure
-      Mul: one_to_one
-    - Dst: case
-      Src: sample
-      Mul: many_to_one
+      Src: follow-up
     - Dst: case
       Src: diagnosis
-      Mul: many_to_one
     - Dst: case
       Src: demographic
-      Mul: one_to_one
+    - Dst: case
+      Src: exposure
+    - Dst: case
+      Src: sample
     Mul: many_to_one
     Props: null
-    Req: true
+    Req: 1
   of_diagnosis:
     Ends:
     - Dst: diagnosis
-      Src: follow_up
-    - Dst: diagnosis
       Src: treatment
+    - Dst: diagnosis
+      Src: follow-up
     Mul: many_to_one
     Props: null
+    Req: 1
   of_gene:
     Ends:
     - Dst: gene
-      Src: gene_abundance
-    - Dst: gene
       Src: protein_abundance
-    Mul: many_to_one
+    - Dst: gene
+      Src: gene_abundance
+    Mul: null
     Props: null
-    Req: true
+    Req: 1
   of_portion:
     Ends:
     - Dst: portion
       Src: analyte
-    Mul: many_to_one
+    Mul: null
     Props: null
-    Req: true
+    Req: 1
   of_program:
     Ends:
     - Dst: program
       Src: project
-    Mul: one_to_many
+    Mul: null
     Props: null
-    Req: true
+    Req: 1
   of_project:
     Ends:
     - Dst: project
       Src: case
     - Dst: project
       Src: study
-    Mul: many_to_one
+    Mul: null
     Props: null
-    Req: true
+    Req: 1
   of_sample:
     Ends:
     - Dst: sample
       Src: aliquot
     - Dst: sample
-      Src: portion
-    - Dst: sample
       Src: analyte
-    Mul: many_to_one
+    - Dst: sample
+      Src: portion
+    Mul: null
     Props: null
-    Req: true
+    Req: 1
   of_study:
     Ends:
     - Dst: study
+      Src: file
+    - Dst: study
       Src: protocol
+    - Dst: study
+      Src: publication
+    - Dst: study
+      Src: protein_abundance
     - Dst: study
       Src: gene_abundance
     - Dst: study
       Src: workflow_metadata
     - Dst: study
-      Src: protein_abundance
-    - Dst: study
-      Src: publication
-    - Dst: study
       Src: study_run_metadata
-    - Dst: study
-      Src: file
-    Mul: many_to_one
+    Mul: null
     Props: null
-    Req: true
+    Req: 1
   of_study_run_metadata:
     Ends:
+    - Dst: study_run_metadata
+      Src: file
+    - Dst: study_run_metadata
+      Src: protein_abundance
     - Dst: study_run_metadata
       Src: aliquot_run_metadata
     - Dst: study_run_metadata
       Src: gene_abundance
-    - Dst: study_run_metadata
-      Src: protein_abundance
-    - Dst: study_run_metadata
-      Src: file
-    Mul: many_to_one
+    Mul: null
     Props: null
-    Req: true
+    Req: 1
