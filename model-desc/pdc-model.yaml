@@ -1,775 +1,850 @@
 ---
 Handle: PDC
-Version: 2.0.2
+Version: v2.0.2
 Nodes:
-  aliquot:
-    Props:
-    - aliquot_id
-    - aliquot_is_ref
-    - aliquot_quantity
-    - aliquot_submitter_id
-    - aliquot_volume
-    - amount
-    - analyte_type
-    - analyte_type_id
-    - concentration
-    - pool
-    - project_id
-    - project_submitter_id
-    - sample_id
-    - sample_submitter_id
-    - status
-  aliquot_run_metadata:
-    Props:
-    - acquisition_file_name
-    - aliquot_id
-    - aliquot_run_metadata_id
-    - aliquot_submitter_id
-    - analyte
-    - condition
-    - date
-    - experiment_number
-    - experiment_type
-    - folder_name
-    - fraction
-    - instrument
-    - label
-    - operator
-    - protocol
-    - protocol_id
-    - protocol_submitter_id
-    - replicate_number
-    - study_id
-    - study_run_metadata_id
-    - study_run_metadata_submitter_id
-    - study_submitter_id
-  analyte:
-    Props:
-    - a260_a280_ratio
-    - amount
-    - analyte_id
-    - analyte_quantity
-    - analyte_submitter_id
-    - analyte_type
-    - analyte_type_id
-    - analyte_volume
-    - concentration
-    - experimental_protocol_type
-    - normal_tumor_genotype_snp_match
-    - portion_id
-    - portion_submitter_id
-    - project_id
-    - project_submitter_id
-    - ribosomal_rna_28s_16s_ratio
-    - rna_integrity_number
-    - sample_id
-    - sample_submitter_id
-    - spectrophotometer_method
-    - well_number
-  case:
-    Props:
-    - case_id
-    - case_is_ref
-    - case_submitter_id
-    - consent_type
-    - days_to_consent
-    - days_to_lost_to_followup
-    - disease_type
-    - external_case_id
-    - index_date
-    - lost_to_followup
-    - pool
-    - primary_site
-    - project_id
-    - project_submitter_id
-    - status
-    - taxon
-  demographic:
-    Props:
-    - age_at_index
-    - age_is_obfuscated
-    - case_id
-    - case_submitter_id
-    - cause_of_death
-    - cause_of_death_source
-    - country_of_residence_at_enrollment
-    - days_to_birth
-    - days_to_death
-    - demographic_id
-    - demographic_submitter_id
-    - ethnicity
-    - gender
-    - occupation_duration_years
-    - premature_at_birth
-    - project_id
-    - project_submitter_id
-    - race
-    - vital_status
-    - weeks_gestation_at_birth
-    - year_of_birth
-    - year_of_death
-  diagnosis:
-    Props:
-    - adrenal_hormone
-    - age_at_diagnosis
-    - ajcc_clinical_m
-    - ajcc_clinical_n
-    - ajcc_clinical_stage
-    - ajcc_clinical_t
-    - ajcc_pathologic_m
-    - ajcc_pathologic_n
-    - ajcc_pathologic_stage
-    - ajcc_pathologic_t
-    - ajcc_staging_system_edition
-    - anaplasia_present
-    - anaplasia_present_type
-    - ann_arbor_b_symptoms
-    - ann_arbor_b_symptoms_described
-    - ann_arbor_clinical_stage
-    - ann_arbor_extranodal_involvement
-    - ann_arbor_pathologic_stage
-    - best_overall_response
-    - breslow_thickness
-    - burkitt_lymphoma_clinical_variant
-    - case_id
-    - case_submitter_id
-    - child_pugh_classification
-    - circumferential_resection_margin
-    - classification_of_tumor
-    - cog_liver_stage
-    - cog_neuroblastoma_risk_group
-    - cog_renal_stage
-    - cog_rhabdomyosarcoma_risk_group
-    - colon_polyps_history
-    - days_to_best_overall_response
-    - days_to_diagnosis
-    - days_to_hiv_diagnosis
-    - days_to_last_follow_up
-    - days_to_last_known_disease_status
-    - days_to_new_event
-    - days_to_recurrence
-    - diagnosis_id
-    - diagnosis_is_primary_disease
-    - diagnosis_submitter_id
-    - eln_risk_classification
-    - enneking_msts_grade
-    - enneking_msts_metastasis
-    - enneking_msts_stage
-    - enneking_msts_tumor_site
-    - esophageal_columnar_dysplasia_degree
-    - esophageal_columnar_metaplasia_present
-    - figo_stage
-    - figo_staging_edition_year
-    - first_symptom_prior_to_diagnosis
-    - gastric_esophageal_junction_involvement
-    - gleason_grade_group
-    - gleason_grade_tertiary
-    - gleason_patterns_percent
-    - goblet_cells_columnar_mucosa_present
-    - gross_tumor_weight
-    - hiv_positive
-    - hpv_positive_type
-    - hpv_status
-    - icd_10_code
-    - igcccg_stage
-    - inpc_grade
-    - inpc_histologic_group
-    - inrg_stage
-    - inss_stage
-    - international_prognostic_index
-    - irs_group
-    - irs_stage
-    - ishak_fibrosis_score
-    - iss_stage
-    - largest_extrapelvic_peritoneal_focus
-    - last_known_disease_status
-    - laterality
-    - ldh_level_at_diagnosis
-    - ldh_normal_range_upper
-    - lymph_nodes_positive
-    - lymph_nodes_tested
-    - lymphatic_invasion_present
-    - margin_distance
-    - margins_involved_site
-    - masaoka_stage
-    - medulloblastoma_molecular_classification
-    - metastasis_at_diagnosis
-    - metastasis_at_diagnosis_site
-    - method_of_diagnosis
-    - micropapillary_features
-    - mitosis_karyorrhexis_index
-    - mitotic_count
-    - morphology
-    - new_event_anatomic_site
-    - new_event_type
-    - non_nodal_regional_disease
-    - non_nodal_tumor_deposits
-    - ovarian_specimen_status
-    - ovarian_surface_involvement
-    - overall_survival
-    - percent_tumor_invasion
-    - perineural_invasion_present
-    - peripancreatic_lymph_nodes_positive
-    - peripancreatic_lymph_nodes_tested
-    - peritoneal_fluid_cytological_status
-    - pregnant_at_diagnosis
-    - primary_diagnosis
-    - primary_gleason_grade
-    - prior_malignancy
-    - prior_treatment
-    - progression_free_survival
-    - progression_free_survival_event
-    - progression_or_recurrence
-    - project_id
-    - project_submitter_id
-    - residual_disease
-    - satellite_nodule_present
-    - secondary_gleason_grade
-    - site_of_resection_or_biopsy
-    - sites_of_involvement
-    - supratentorial_localization
-    - synchronous_malignancy
-    - tissue_or_organ_of_origin
-    - tumor_cell_content
-    - tumor_confined_to_organ_of_origin
-    - tumor_depth
-    - tumor_focality
-    - tumor_grade
-    - tumor_largest_dimension_diameter
-    - tumor_regression_grade
-    - tumor_stage
-    - vascular_invasion_present
-    - vascular_invasion_type
-    - weiss_assessment_score
-    - who_cns_grade
-    - who_nte_grade
-    - wilms_tumor_histologic_subtype
-    - year_of_diagnosis
-  exposure:
-    Props:
-    - age_at_onset
-    - alcohol_days_per_week
-    - alcohol_drinks_per_day
-    - alcohol_history
-    - alcohol_intensity
-    - alcohol_type
-    - asbestos_exposure
-    - bmi
-    - cigarettes_per_day
-    - coal_dust_exposure
-    - environmental_tobacco_smoke_exposure
-    - exposure_duration
-    - exposure_duration_years
-    - exposure_type
-    - height
-    - marijuana_use_per_week
-    - pack_years_smoked
-    - parent_with_radiation_exposure
-    - radon_exposure
-    - respirable_crystalline_silica_exposure
-    - secondhand_smoke_as_child
-    - smokeless_tobacco_quit_age
-    - smoking_frequency
-    - time_between_waking_and_first_smoke
-    - tobacco_smoking_onset_year
-    - tobacco_smoking_quit_year
-    - tobacco_smoking_status
-    - tobacco_use_per_day
-    - type_of_smoke_exposure
-    - type_of_tobacco_used
-    - weight
-    - years_smoked
-  family_history:
-    Props:
-    - relationship_age_at_diagnosis
-    - relationship_gender
-    - relationship_primary_diagnosis
-    - relationship_type
-    - relative_with_cancer_history
-    - relatives_with_cancer_history_count
-  file:
-    Props:
-    - access
-    - data_category
-    - dbgap_control_number
-    - downloadable
-    - file_format
-    - file_id
-    - file_location
-    - file_name
-    - file_size
-    - file_type
-    - fraction_number
-    - md5sum
-    - original_file_name
-    - sha1
-  follow-up:
-    Props:
-    - adverse_event
-    - adverse_event_grade
-    - aids_risk_factors
-    - barretts_esophagus_goblet_cells_present
-    - bmi
-    - body_surface_area
-    - cause_of_response
-    - cd4_count
-    - cdc_hiv_risk_factors
-    - comorbidity
-    - comorbidity_method_of_diagnosis
-    - days_to_adverse_event
-    - days_to_comorbidity
-    - days_to_follow_up
-    - days_to_imaging
-    - days_to_progression
-    - days_to_progression_free
-    - days_to_recurrence
-    - diabetes_treatment_type
-    - disease_response
-    - dlco_ref_predictive_percent
-    - ecog_performance_status
-    - evidence_of_recurrence_type
-    - eye_color
-    - fev1_fvc_post_bronch_percent
-    - fev1_fvc_pre_bronch_percent
-    - fev1_ref_post_bronch_percent
-    - fev1_ref_pre_bronch_percent
-    - haart_treatment_indicator
-    - height
-    - hepatitis_sustained_virological_response
-    - history_of_tumor
-    - history_of_tumor_type
-    - hiv_viral_load
-    - hormonal_contraceptive_type
-    - hormonal_contraceptive_use
-    - hormone_replacement_therapy_type
-    - hpv_positive_type
-    - hysterectomy_margins_involved
-    - hysterectomy_type
-    - imaging_result
-    - imaging_type
-    - immunosuppressive_treatment_type
-    - karnofsky_performance_status
-    - menopause_status
-    - nadir_cd4_count
-    - pancreatitis_onset_year
-    - pregnancy_outcome
-    - procedures_performed
-    - progression_or_recurrence
-    - progression_or_recurrence_anatomic_site
-    - progression_or_recurrence_type
-    - recist_targeted_regions_number
-    - recist_targeted_regions_sum
-    - reflux_treatment_type
-    - risk_factor
-    - risk_factor_treatment
-    - scan_tracer_used
-    - undescended_testis_corrected
-    - undescended_testis_corrected_age
-    - undescended_testis_corrected_laterality
-    - undescended_testis_corrected_method
-    - undescended_testis_history
-    - undescended_testis_history_laterality
-    - viral_hepatitis_serologies
-    - weight
-  gene:
-    Props:
-    - assays
-    - authority
-    - chromosome
-    - description
-    - gene_id
-    - gene_name
-    - locus
-    - ncbi_gene_id
-    - organism
-    - proteins
-  gene_abundance:
-    Props:
-    - aliquot_id
-    - aliquot_submitter_id
-    - gene_abundance_id
-    - gene_id
-    - gene_name
-    - log2_ratio
-    - precursor_area
-    - unshared_log2_ratio
-    - unshared_precursor_area
-  portion:
-    Props:
-    - creation_datetime
-    - is_ffpe
-    - portion_id
-    - portion_number
-    - portion_submitter_id
-    - project_id
-    - project_submitter_id
-    - sample_id
-    - sample_submitter_id
-    - weight
-  program:
-    Props:
-    - end_date
-    - name
-    - program_id
-    - program_manager
-    - program_shortname
-    - program_submitter_id
-    - sponsor
-    - start_date
-  project:
-    Props:
-    - description
-    - name
-    - program
-    - program_id
-    - program_submitter_id
-    - project_id
-    - project_submitter_id
-  protein_abundance:
-    Props:
-    - distinct_peptide
-    - log_ratio
-    - plex_name
-    - precursor_area
-    - spectral_count
-    - unshared_log_ratio
-    - unshared_peptide
-    - unshared_precursor_area
-  protocol:
-    Props:
-    - 1d_chromatography_type
-    - 2d_chromatography_type
-    - acquisition_type
-    - alkylation_reagent
-    - amount_on_column
-    - amount_on_column_uom
-    - analytical_technique
-    - chromatography_dimensions_count
-    - chromatography_instrument_make
-    - chromatography_instrument_model
-    - column_inner_diameter
-    - column_inner_diameter_uom
-    - column_length
-    - column_length_uom
-    - column_type
-    - dda_topn
-    - dia_ims
-    - dia_multiplexing
-    - digestion_reagent
-    - dissociation_type
-    - document_name
-    - enrichment
-    - enrichment_strategy
-    - experiment_type
-    - extraction_method
-    - fractions_analyzed_count
-    - gradient_length
-    - gradient_length_uom
-    - instrument_make
-    - instrument_model
-    - internal_standards
-    - ionization_mode
-    - isobaric_labeling_reagent
-    - label_free_quantitation
-    - labeled_quantitation
-    - ms1_resolution
-    - ms2_resolution
-    - normalized_collision_energy
-    - particle_size
-    - particle_size_uom
-    - particle_type
-    - polarity
-    - program_id
-    - program_submitter_id
-    - protocol_date
-    - protocol_id
-    - protocol_name
-    - protocol_submitter_id
-    - quantitation_strategy
-    - reconstitution_solvent
-    - reconstitution_solvent_volume
-    - reconstitution_volume_uom
-    - reporter_ion_ms_level
-    - serial_number
-    - starting_amount
-    - starting_amount_uom
-  publication:
-    Props:
-    - publication_id
-    - pubmed_id
-    - title
-  sample:
-    Props:
-    - biospecimen_anatomic_site
-    - biospecimen_laterality
-    - case_id
-    - case_submitter_id
-    - catalog_reference
-    - composition
-    - current_weight
-    - days_to_collection
-    - days_to_sample_procurement
-    - diagnosis_pathologically_confirmed
-    - distance_normal_to_tumor
-    - distributor_reference
-    - freezing_method
-    - gdc_project_id
-    - gdc_sample_id
-    - growth_rate
-    - initial_weight
-    - intermediate_dimension
-    - is_ffpe
-    - longest_dimension
-    - method_of_sample_procurement
-    - oct_embedded
-    - passage_count
-    - pathology_report_uuid
-    - pool
-    - preservation_method
-    - project_id
-    - project_submitter_id
-    - sample_id
-    - sample_is_ref
-    - sample_ordinal
-    - sample_submitter_id
-    - sample_type
-    - sample_type_id
-    - shortest_dimension
-    - status
-    - time_between_clamping_and_freezing
-    - time_between_excision_and_freezing
-    - tissue_collection_type
-    - tissue_type
-    - tumor_code
-    - tumor_code_id
-    - tumor_descriptor
-  study:
-    Props:
-    - acquisition_type
-    - analytical_fraction
-    - experiment_type
-    - project_id
-    - project_submitter_id
-    - study_description
-    - study_id
-    - study_short_name
-    - study_shortname
-    - study_submitter_id
-    - submitter_id_name
-  study_run_metadata:
-    Props:
-    - alias
-    - analyte
-    - condition
-    - date
-    - experiment_number
-    - experiment_type
-    - folder_name
-    - fraction
-    - itraq_113
-    - itraq_114
-    - itraq_115
-    - itraq_116
-    - itraq_117
-    - itraq_118
-    - itraq_119
-    - itraq_121
-    - label_free
-    - operator
-    - plex_or_folder_name
-    - polarity
-    - protocol_id
-    - protocol_submitter_id
-    - replicate_number
-    - study_id
-    - study_run_metadata_id
-    - study_run_metadata_submitter_id
-    - study_submitter_id
-    - tmt_126
-    - tmt_127c
-    - tmt_127n
-    - tmt_128c
-    - tmt_128n
-    - tmt_129c
-    - tmt_129n
-    - tmt_130c
-    - tmt_130n
-    - tmt_131
-    - tmt_131c
-    - tmt_132c
-    - tmt_132n
-    - tmt_133c
-    - tmt_133n
-    - tmt_134c
-    - tmt_134n
-    - tmt_135n
-  treatment:
-    Props:
-    - chemo_concurrent_to_radiation
-    - days_to_treatment_end
-    - days_to_treatment_start
-    - initial_disease_status
-    - number_of_cycles
-    - reason_treatment_ended
-    - regimen_or_line_of_therapy
-    - route_of_administration
-    - therapeutic_agents
-    - treatment_anatomic_site
-    - treatment_arm
-    - treatment_dose
-    - treatment_dose_units
-    - treatment_effect
-    - treatment_effect_indicator
-    - treatment_frequency
-    - treatment_intent_type
-    - treatment_or_therapy
-    - treatment_outcome
-    - treatment_type
-  workflow_metadata:
-    Props:
-    - analytical_fraction
-    - cdap_reports
-    - cptac_dcc_mzidentml
-    - cptac_dcc_tools
-    - cptac_galaxy_tools
-    - cptac_galaxy_workflows
-    - cptac_study_id
-    - experiment_type
-    - gene_to_prot
-    - hgnc_version
-    - instrument
-    - ms1_data_analysis
-    - mzidentml_refseq
-    - mzidentml_uniprot
-    - phosphosite_localization
-    - protocol_id
-    - protocol_submitter_id
-    - psm_report_generation
-    - raw_data_conversion
-    - raw_data_processing
-    - refseq_database_version
-    - search_database_parameters
-    - sequence_database_search
-    - study_id
-    - study_submitter_id
-    - study_submitter_name
-    - submitter_id_name
-    - uniport_database_version
-    - workflow_metadata_id
-    - workflow_metadata_submitter_id
+    aliquot:
+        Desc: Pertaining to a portion of the whole; any one of two or more samples
+            of something, of the same volume or weight.
+        Props:
+        - aliquot_id
+        - aliquot_is_ref
+        - aliquot_quantity
+        - aliquot_submitter_id
+        - aliquot_volume
+        - amount
+        - analyte_type
+        - analyte_type_id
+        - concentration
+        - pool
+        - project_id
+        - project_submitter_id
+        - sample_id
+        - sample_submitter_id
+        - status
+    aliquot_run_metadata:
+        Desc: Experimental metadata describing how an aliquot was processed within
+            a study.
+        Props:
+        - acquisition_file_name
+        - aliquot_id
+        - aliquot_run_metadata_id
+        - aliquot_submitter_id
+        - analyte
+        - condition
+        - date
+        - experiment_number
+        - experiment_type
+        - folder_name
+        - fraction
+        - instrument
+        - label
+        - operator
+        - protocol
+        - protocol_id
+        - protocol_submitter_id
+        - replicate_number
+        - study_id
+        - study_run_metadata_id
+        - study_run_metadata_submitter_id
+        - study_submitter_id
+    analyte:
+        Desc: A liquid bulk product produced according to specified lab protocols,
+            from a sample or analyte, intended for further analysis.
+        Props:
+        - a260_a280_ratio
+        - amount
+        - analyte_id
+        - analyte_quantity
+        - analyte_submitter_id
+        - analyte_type
+        - analyte_type_id
+        - analyte_volume
+        - concentration
+        - experimental_protocol_type
+        - normal_tumor_genotype_snp_match
+        - portion_id
+        - portion_submitter_id
+        - project_id
+        - project_submitter_id
+        - ribosomal_rna_28s_16s_ratio
+        - rna_integrity_number
+        - sample_id
+        - sample_submitter_id
+        - spectrophotometer_method
+        - well_number
+    case:
+        Desc: 'The collection of all data related to a specific subject in the context
+            of a specific project.
+
+            '
+        Props:
+        - case_id
+        - case_is_ref
+        - case_submitter_id
+        - consent_type
+        - days_to_consent
+        - days_to_lost_to_followup
+        - disease_type
+        - external_case_id
+        - index_date
+        - lost_to_followup
+        - pool
+        - primary_site
+        - project_id
+        - project_submitter_id
+        - status
+        - taxon
+    demographic:
+        Desc: Data for the characterization of the patient by means of segmenting
+            the population (e.g., characterization by age, sex, or race).
+        Props:
+        - age_at_index
+        - age_is_obfuscated
+        - case_id
+        - case_submitter_id
+        - cause_of_death
+        - cause_of_death_source
+        - country_of_residence_at_enrollment
+        - days_to_birth
+        - days_to_death
+        - demographic_id
+        - demographic_submitter_id
+        - ethnicity
+        - gender
+        - occupation_duration_years
+        - premature_at_birth
+        - project_id
+        - project_submitter_id
+        - race
+        - vital_status
+        - weeks_gestation_at_birth
+        - year_of_birth
+        - year_of_death
+    diagnosis:
+        Desc: Data from the investigation, analysis and recognition of the presence
+            and nature of disease, condition, or injury from expressed signs and symptoms;
+            also, the scientific determination of any kind; the concise results of
+            such an investigation.
+        Props:
+        - adrenal_hormone
+        - age_at_diagnosis
+        - ajcc_clinical_m
+        - ajcc_clinical_n
+        - ajcc_clinical_stage
+        - ajcc_clinical_t
+        - ajcc_pathologic_m
+        - ajcc_pathologic_n
+        - ajcc_pathologic_stage
+        - ajcc_pathologic_t
+        - ajcc_staging_system_edition
+        - anaplasia_present
+        - anaplasia_present_type
+        - ann_arbor_b_symptoms
+        - ann_arbor_b_symptoms_described
+        - ann_arbor_clinical_stage
+        - ann_arbor_extranodal_involvement
+        - ann_arbor_pathologic_stage
+        - best_overall_response
+        - breslow_thickness
+        - burkitt_lymphoma_clinical_variant
+        - case_id
+        - case_submitter_id
+        - child_pugh_classification
+        - circumferential_resection_margin
+        - classification_of_tumor
+        - cog_liver_stage
+        - cog_neuroblastoma_risk_group
+        - cog_renal_stage
+        - cog_rhabdomyosarcoma_risk_group
+        - colon_polyps_history
+        - days_to_best_overall_response
+        - days_to_diagnosis
+        - days_to_hiv_diagnosis
+        - days_to_last_follow_up
+        - days_to_last_known_disease_status
+        - days_to_new_event
+        - days_to_recurrence
+        - diagnosis_id
+        - diagnosis_is_primary_disease
+        - diagnosis_submitter_id
+        - eln_risk_classification
+        - enneking_msts_grade
+        - enneking_msts_metastasis
+        - enneking_msts_stage
+        - enneking_msts_tumor_site
+        - esophageal_columnar_dysplasia_degree
+        - esophageal_columnar_metaplasia_present
+        - figo_stage
+        - figo_staging_edition_year
+        - first_symptom_prior_to_diagnosis
+        - gastric_esophageal_junction_involvement
+        - gleason_grade_group
+        - gleason_grade_tertiary
+        - gleason_patterns_percent
+        - goblet_cells_columnar_mucosa_present
+        - gross_tumor_weight
+        - hiv_positive
+        - hpv_positive_type
+        - hpv_status
+        - icd_10_code
+        - igcccg_stage
+        - inpc_grade
+        - inpc_histologic_group
+        - inrg_stage
+        - inss_stage
+        - international_prognostic_index
+        - irs_group
+        - irs_stage
+        - ishak_fibrosis_score
+        - iss_stage
+        - largest_extrapelvic_peritoneal_focus
+        - last_known_disease_status
+        - laterality
+        - ldh_level_at_diagnosis
+        - ldh_normal_range_upper
+        - lymph_nodes_positive
+        - lymph_nodes_tested
+        - lymphatic_invasion_present
+        - margin_distance
+        - margins_involved_site
+        - masaoka_stage
+        - medulloblastoma_molecular_classification
+        - metastasis_at_diagnosis
+        - metastasis_at_diagnosis_site
+        - method_of_diagnosis
+        - micropapillary_features
+        - mitosis_karyorrhexis_index
+        - mitotic_count
+        - morphology
+        - new_event_anatomic_site
+        - new_event_type
+        - non_nodal_regional_disease
+        - non_nodal_tumor_deposits
+        - ovarian_specimen_status
+        - ovarian_surface_involvement
+        - overall_survival
+        - percent_tumor_invasion
+        - perineural_invasion_present
+        - peripancreatic_lymph_nodes_positive
+        - peripancreatic_lymph_nodes_tested
+        - peritoneal_fluid_cytological_status
+        - pregnant_at_diagnosis
+        - primary_diagnosis
+        - primary_gleason_grade
+        - prior_malignancy
+        - prior_treatment
+        - progression_free_survival
+        - progression_free_survival_event
+        - progression_or_recurrence
+        - project_id
+        - project_submitter_id
+        - residual_disease
+        - satellite_nodule_present
+        - secondary_gleason_grade
+        - site_of_resection_or_biopsy
+        - sites_of_involvement
+        - supratentorial_localization
+        - synchronous_malignancy
+        - tissue_or_organ_of_origin
+        - tumor_cell_content
+        - tumor_confined_to_organ_of_origin
+        - tumor_depth
+        - tumor_focality
+        - tumor_grade
+        - tumor_largest_dimension_diameter
+        - tumor_regression_grade
+        - tumor_stage
+        - vascular_invasion_present
+        - vascular_invasion_type
+        - weiss_assessment_score
+        - who_cns_grade
+        - who_nte_grade
+        - wilms_tumor_histologic_subtype
+        - year_of_diagnosis
+    exposure:
+        Desc: 'Clinically relevant patient information not immediately resulting from
+            genetic predispositions.
+
+            '
+        Props:
+        - age_at_onset
+        - alcohol_days_per_week
+        - alcohol_drinks_per_day
+        - alcohol_history
+        - alcohol_intensity
+        - alcohol_type
+        - asbestos_exposure
+        - bmi
+        - cigarettes_per_day
+        - coal_dust_exposure
+        - environmental_tobacco_smoke_exposure
+        - exposure_duration
+        - exposure_duration_years
+        - exposure_type
+        - height
+        - marijuana_use_per_week
+        - pack_years_smoked
+        - parent_with_radiation_exposure
+        - radon_exposure
+        - respirable_crystalline_silica_exposure
+        - secondhand_smoke_as_child
+        - smokeless_tobacco_quit_age
+        - smoking_frequency
+        - time_between_waking_and_first_smoke
+        - tobacco_smoking_onset_year
+        - tobacco_smoking_quit_year
+        - tobacco_smoking_status
+        - tobacco_use_per_day
+        - type_of_smoke_exposure
+        - type_of_tobacco_used
+        - weight
+        - years_smoked
+    family_history:
+        Desc: 'Record of a patient''s background regarding cancer events of blood
+            relatives.
+
+            '
+        Props:
+        - relationship_age_at_diagnosis
+        - relationship_gender
+        - relationship_primary_diagnosis
+        - relationship_type
+        - relative_with_cancer_history
+        - relatives_with_cancer_history_count
+    file:
+        Desc: Data files submitted by a user or generated by data analysis pipeline.
+        Props:
+        - access
+        - data_category
+        - dbgap_control_number
+        - downloadable
+        - file_format
+        - file_id
+        - file_location
+        - file_name
+        - file_size
+        - file_type
+        - fraction_number
+        - md5sum
+        - original_file_name
+        - sha1
+    follow-up:
+        Desc: 'A visit by a patient or study participant to a medical professional.
+            A clinical encounter that encompasses planned and unplanned trial interventions,
+            procedures and assessments that may be performed on a subject. A visit
+            has a start and an end, each described with a rule. The process by which
+            information about the health status of an individual is obtained before
+            and after a study has officially closed; an activity that continues something
+            that has already begun or that repeats something that has already been
+            done.
+
+            '
+        Props:
+        - adverse_event
+        - adverse_event_grade
+        - aids_risk_factors
+        - barretts_esophagus_goblet_cells_present
+        - bmi
+        - body_surface_area
+        - cause_of_response
+        - cd4_count
+        - cdc_hiv_risk_factors
+        - comorbidity
+        - comorbidity_method_of_diagnosis
+        - days_to_adverse_event
+        - days_to_comorbidity
+        - days_to_follow_up
+        - days_to_imaging
+        - days_to_progression
+        - days_to_progression_free
+        - days_to_recurrence
+        - diabetes_treatment_type
+        - disease_response
+        - dlco_ref_predictive_percent
+        - ecog_performance_status
+        - evidence_of_recurrence_type
+        - eye_color
+        - fev1_fvc_post_bronch_percent
+        - fev1_fvc_pre_bronch_percent
+        - fev1_ref_post_bronch_percent
+        - fev1_ref_pre_bronch_percent
+        - haart_treatment_indicator
+        - height
+        - hepatitis_sustained_virological_response
+        - history_of_tumor
+        - history_of_tumor_type
+        - hiv_viral_load
+        - hormonal_contraceptive_type
+        - hormonal_contraceptive_use
+        - hormone_replacement_therapy_type
+        - hpv_positive_type
+        - hysterectomy_margins_involved
+        - hysterectomy_type
+        - imaging_result
+        - imaging_type
+        - immunosuppressive_treatment_type
+        - karnofsky_performance_status
+        - menopause_status
+        - nadir_cd4_count
+        - pancreatitis_onset_year
+        - pregnancy_outcome
+        - procedures_performed
+        - progression_or_recurrence
+        - progression_or_recurrence_anatomic_site
+        - progression_or_recurrence_type
+        - recist_targeted_regions_number
+        - recist_targeted_regions_sum
+        - reflux_treatment_type
+        - risk_factor
+        - risk_factor_treatment
+        - scan_tracer_used
+        - undescended_testis_corrected
+        - undescended_testis_corrected_age
+        - undescended_testis_corrected_laterality
+        - undescended_testis_corrected_method
+        - undescended_testis_history
+        - undescended_testis_history_laterality
+        - viral_hepatitis_serologies
+        - weight
+    gene:
+        Desc: A functional unit of heredity which occupies a specific position on
+            a particular chromosome and serves as the template for a product that
+            contributes to a phenotype or a biological function.
+        Props:
+        - assays
+        - authority
+        - chromosome
+        - description
+        - gene_id
+        - gene_name
+        - locus
+        - ncbi_gene_id
+        - organism
+        - proteins
+    gene_abundance:
+        Desc: 'Derived results intended to approximate protein abundance for a given
+
+            gene product. Units of measurement include peptide-spectrum-matches (spectral
+
+            counts), precursor or reporter ion abundance.'
+        Props:
+        - aliquot_id
+        - aliquot_submitter_id
+        - gene_abundance_id
+        - gene_id
+        - gene_name
+        - log2_ratio
+        - precursor_area
+        - unshared_log2_ratio
+        - unshared_precursor_area
+    portion:
+        Desc: A physical sub-part of any sample.
+        Props:
+        - creation_datetime
+        - is_ffpe
+        - portion_id
+        - portion_number
+        - portion_submitter_id
+        - project_id
+        - project_submitter_id
+        - sample_id
+        - sample_submitter_id
+        - weight
+    program:
+        Desc: A broad framework of goals to be achieved.
+        Props:
+        - end_date
+        - name
+        - program_id
+        - program_manager
+        - program_shortname
+        - program_submitter_id
+        - sponsor
+        - start_date
+    project:
+        Desc: Any specifically defined piece of work that is undertaken or attempted
+            to meet a single requirement.
+        Props:
+        - description
+        - name
+        - program
+        - program_id
+        - program_submitter_id
+        - project_id
+        - project_submitter_id
+    protein_abundance:
+        Desc: Derived results intended to approximate protein abundance for a given
+            gene product. Units of measurement include peptide-spectrum-matches (spectral
+            counts), precursor or reporter ion abundance.
+        Props:
+        - distinct_peptide
+        - log_ratio
+        - plex_name
+        - precursor_area
+        - spectral_count
+        - unshared_log_ratio
+        - unshared_peptide
+        - unshared_precursor_area
+    protocol:
+        Desc: 'The formal plan of an experiment or research activity, including the
+            objective, rationale, design, materials and methods for the conduct of
+            the study; intervention description, and method of data analysis. '
+        Props:
+        - 1d_chromatography_type
+        - 2d_chromatography_type
+        - acquisition_type
+        - alkylation_reagent
+        - amount_on_column
+        - amount_on_column_uom
+        - analytical_technique
+        - chromatography_dimensions_count
+        - chromatography_instrument_make
+        - chromatography_instrument_model
+        - column_inner_diameter
+        - column_inner_diameter_uom
+        - column_length
+        - column_length_uom
+        - column_type
+        - dda_topn
+        - dia_ims
+        - dia_multiplexing
+        - digestion_reagent
+        - dissociation_type
+        - document_name
+        - enrichment
+        - enrichment_strategy
+        - experiment_type
+        - extraction_method
+        - fractions_analyzed_count
+        - gradient_length
+        - gradient_length_uom
+        - instrument_make
+        - instrument_model
+        - internal_standards
+        - ionization_mode
+        - isobaric_labeling_reagent
+        - label_free_quantitation
+        - labeled_quantitation
+        - ms1_resolution
+        - ms2_resolution
+        - normalized_collision_energy
+        - particle_size
+        - particle_size_uom
+        - particle_type
+        - polarity
+        - program_id
+        - program_submitter_id
+        - protocol_date
+        - protocol_id
+        - protocol_name
+        - protocol_submitter_id
+        - quantitation_strategy
+        - reconstitution_solvent
+        - reconstitution_solvent_volume
+        - reconstitution_volume_uom
+        - reporter_ion_ms_level
+        - serial_number
+        - starting_amount
+        - starting_amount_uom
+    publication:
+        Desc: Published scientific research article describing a study.
+        Props:
+        - publication_id
+        - pubmed_id
+        - title
+    sample:
+        Desc: Any material sample taken from a biological entity for testing, diagnostic,
+            propagation, treatment or research purposes, including a sample obtained
+            from a living organism or taken from the biological object after halting
+            of all its life functions. Biospecimen can contain one or more components
+            including but not limited to cellular molecules, cells, tissues, organs,
+            body fluids, embryos, and body excretory products.
+        Props:
+        - biospecimen_anatomic_site
+        - biospecimen_laterality
+        - case_id
+        - case_submitter_id
+        - catalog_reference
+        - composition
+        - current_weight
+        - days_to_collection
+        - days_to_sample_procurement
+        - diagnosis_pathologically_confirmed
+        - distance_normal_to_tumor
+        - distributor_reference
+        - freezing_method
+        - gdc_project_id
+        - gdc_sample_id
+        - growth_rate
+        - initial_weight
+        - intermediate_dimension
+        - is_ffpe
+        - longest_dimension
+        - method_of_sample_procurement
+        - oct_embedded
+        - passage_count
+        - pathology_report_uuid
+        - pool
+        - preservation_method
+        - project_id
+        - project_submitter_id
+        - sample_id
+        - sample_is_ref
+        - sample_ordinal
+        - sample_submitter_id
+        - sample_type
+        - sample_type_id
+        - shortest_dimension
+        - status
+        - time_between_clamping_and_freezing
+        - time_between_excision_and_freezing
+        - tissue_collection_type
+        - tissue_type
+        - tumor_code
+        - tumor_code_id
+        - tumor_descriptor
+    study:
+        Desc: A detailed examination, analysis, or critical inspection of a subject
+            designed to discover facts about it.
+        Props:
+        - acquisition_type
+        - analytical_fraction
+        - experiment_type
+        - project_id
+        - project_submitter_id
+        - study_description
+        - study_id
+        - study_short_name
+        - study_shortname
+        - study_submitter_id
+        - submitter_id_name
+    study_run_metadata:
+        Desc: 'General experimental metadata describing one part of a study. It serves
+            two purposes: <br>(1) to group files (e.g., RPLC fractions) containing
+            data on one or more samples, and <br>(2) to document the individual sample-to-channel
+            assignments for a multiplexed run.<br> On the PDC portal, we simplify
+            this property''s human-readable identifier (study_run_metadata_submitter_id)
+            to ''Run Metadata Id''. Synonyms include plex name, plex dataset name,
+            folder name, and more in labeled experiments.'
+        Props:
+        - alias
+        - analyte
+        - condition
+        - date
+        - experiment_number
+        - experiment_type
+        - folder_name
+        - fraction
+        - itraq_113
+        - itraq_114
+        - itraq_115
+        - itraq_116
+        - itraq_117
+        - itraq_118
+        - itraq_119
+        - itraq_121
+        - label_free
+        - operator
+        - plex_or_folder_name
+        - polarity
+        - protocol_id
+        - protocol_submitter_id
+        - replicate_number
+        - study_id
+        - study_run_metadata_id
+        - study_run_metadata_submitter_id
+        - study_submitter_id
+        - tmt_126
+        - tmt_127c
+        - tmt_127n
+        - tmt_128c
+        - tmt_128n
+        - tmt_129c
+        - tmt_129n
+        - tmt_130c
+        - tmt_130n
+        - tmt_131
+        - tmt_131c
+        - tmt_132c
+        - tmt_132n
+        - tmt_133c
+        - tmt_133n
+        - tmt_134c
+        - tmt_134n
+        - tmt_135n
+    treatment:
+        Desc: 'Record of the administration and intention of therapeutic agents provided
+            to a patient to alter the course of a pathologic process.
+
+            '
+        Props:
+        - chemo_concurrent_to_radiation
+        - days_to_treatment_end
+        - days_to_treatment_start
+        - initial_disease_status
+        - number_of_cycles
+        - reason_treatment_ended
+        - regimen_or_line_of_therapy
+        - route_of_administration
+        - therapeutic_agents
+        - treatment_anatomic_site
+        - treatment_arm
+        - treatment_dose
+        - treatment_dose_units
+        - treatment_effect
+        - treatment_effect_indicator
+        - treatment_frequency
+        - treatment_intent_type
+        - treatment_or_therapy
+        - treatment_outcome
+        - treatment_type
+    workflow_metadata:
+        Desc: Tools, versions and parameters used in data analysis pipeline/workflow
+            for analyzing study data.
+        Props:
+        - analytical_fraction
+        - cdap_reports
+        - cptac_dcc_mzidentml
+        - cptac_dcc_tools
+        - cptac_galaxy_tools
+        - cptac_galaxy_workflows
+        - cptac_study_id
+        - experiment_type
+        - gene_to_prot
+        - hgnc_version
+        - instrument
+        - ms1_data_analysis
+        - mzidentml_refseq
+        - mzidentml_uniprot
+        - phosphosite_localization
+        - protocol_id
+        - protocol_submitter_id
+        - psm_report_generation
+        - raw_data_conversion
+        - raw_data_processing
+        - refseq_database_version
+        - search_database_parameters
+        - sequence_database_search
+        - study_id
+        - study_submitter_id
+        - study_submitter_name
+        - submitter_id_name
+        - uniport_database_version
+        - workflow_metadata_id
+        - workflow_metadata_submitter_id
 Relationships:
-  of_aliquot:
-    Ends:
-    - Dst: aliquot
-      Src: aliquot_run_metadata
-    Mul: null
-    Props: null
-    Req: 1
-  of_analyte:
-    Ends:
-    - Dst: analyte
-      Src: aliquot
-    Mul: null
-    Props: null
-    Req: 1
-  of_case:
-    Ends:
-    - Dst: case
-      Src: family_history
-    - Dst: case
-      Src: follow-up
-    - Dst: case
-      Src: diagnosis
-    - Dst: case
-      Src: demographic
-    - Dst: case
-      Src: exposure
-    - Dst: case
-      Src: sample
-    Mul: many_to_one
-    Props: null
-    Req: 1
-  of_diagnosis:
-    Ends:
-    - Dst: diagnosis
-      Src: treatment
-    - Dst: diagnosis
-      Src: follow-up
-    Mul: many_to_one
-    Props: null
-    Req: 1
-  of_gene:
-    Ends:
-    - Dst: gene
-      Src: protein_abundance
-    - Dst: gene
-      Src: gene_abundance
-    Mul: null
-    Props: null
-    Req: 1
-  of_portion:
-    Ends:
-    - Dst: portion
-      Src: analyte
-    Mul: null
-    Props: null
-    Req: 1
-  of_program:
-    Ends:
-    - Dst: program
-      Src: project
-    Mul: null
-    Props: null
-    Req: 1
-  of_project:
-    Ends:
-    - Dst: project
-      Src: case
-    - Dst: project
-      Src: study
-    Mul: null
-    Props: null
-    Req: 1
-  of_sample:
-    Ends:
-    - Dst: sample
-      Src: aliquot
-    - Dst: sample
-      Src: analyte
-    - Dst: sample
-      Src: portion
-    Mul: null
-    Props: null
-    Req: 1
-  of_study:
-    Ends:
-    - Dst: study
-      Src: file
-    - Dst: study
-      Src: protocol
-    - Dst: study
-      Src: publication
-    - Dst: study
-      Src: protein_abundance
-    - Dst: study
-      Src: gene_abundance
-    - Dst: study
-      Src: workflow_metadata
-    - Dst: study
-      Src: study_run_metadata
-    Mul: null
-    Props: null
-    Req: 1
-  of_study_run_metadata:
-    Ends:
-    - Dst: study_run_metadata
-      Src: file
-    - Dst: study_run_metadata
-      Src: protein_abundance
-    - Dst: study_run_metadata
-      Src: aliquot_run_metadata
-    - Dst: study_run_metadata
-      Src: gene_abundance
-    Mul: null
-    Props: null
-    Req: 1
+    of_aliquot:
+        Ends:
+        -   Dst: aliquot
+            Src: aliquot_run_metadata
+        Mul: null
+        Props: null
+        Req: 1
+    of_analyte:
+        Ends:
+        -   Dst: analyte
+            Src: aliquot
+        Mul: null
+        Props: null
+        Req: 1
+    of_case:
+        Ends:
+        -   Dst: case
+            Src: family_history
+        -   Dst: case
+            Src: follow-up
+        -   Dst: case
+            Src: diagnosis
+        -   Dst: case
+            Src: demographic
+        -   Dst: case
+            Src: exposure
+        -   Dst: case
+            Src: sample
+        Mul: many_to_one
+        Props: null
+        Req: 1
+    of_diagnosis:
+        Ends:
+        -   Dst: diagnosis
+            Src: treatment
+        -   Dst: diagnosis
+            Src: follow-up
+        Mul: many_to_one
+        Props: null
+        Req: 1
+    of_gene:
+        Ends:
+        -   Dst: gene
+            Src: protein_abundance
+        -   Dst: gene
+            Src: gene_abundance
+        Mul: null
+        Props: null
+        Req: 1
+    of_portion:
+        Ends:
+        -   Dst: portion
+            Src: analyte
+        Mul: null
+        Props: null
+        Req: 1
+    of_program:
+        Ends:
+        -   Dst: program
+            Src: project
+        Mul: null
+        Props: null
+        Req: 1
+    of_project:
+        Ends:
+        -   Dst: project
+            Src: case
+        -   Dst: project
+            Src: study
+        Mul: null
+        Props: null
+        Req: 1
+    of_sample:
+        Ends:
+        -   Dst: sample
+            Src: aliquot
+        -   Dst: sample
+            Src: analyte
+        -   Dst: sample
+            Src: portion
+        Mul: null
+        Props: null
+        Req: 1
+    of_study:
+        Ends:
+        -   Dst: study
+            Src: file
+        -   Dst: study
+            Src: protocol
+        -   Dst: study
+            Src: publication
+        -   Dst: study
+            Src: protein_abundance
+        -   Dst: study
+            Src: gene_abundance
+        -   Dst: study
+            Src: workflow_metadata
+        -   Dst: study
+            Src: study_run_metadata
+        Mul: null
+        Props: null
+        Req: 1
+    of_study_run_metadata:
+        Ends:
+        -   Dst: study_run_metadata
+            Src: file
+        -   Dst: study_run_metadata
+            Src: protein_abundance
+        -   Dst: study_run_metadata
+            Src: aliquot_run_metadata
+        -   Dst: study_run_metadata
+            Src: gene_abundance
+        Mul: null
+        Props: null
+        Req: 1
