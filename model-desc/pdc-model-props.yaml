@@ -3255,7 +3255,7 @@ PropDefinitions:
         - V8-DE
         - V8-E
         - Lys-C
-        - Trypsin
+        # - Trypsin
         Req: 'True'
         Term:
         -   Code: MS:1001045
@@ -4512,7 +4512,7 @@ PropDefinitions:
         - 3200 QTRAP
         - 3500 QTRAP
         - 4000 QTRAP
-        - 4000 QTRAP
+        # - 4000 QTRAP
         - 4800 Plus MALDI TOF/TOF
         - 5800 TOF/TOF
         - API 100
@@ -7981,7 +7981,7 @@ PropDefinitions:
         - Haemangiosarcoma
         - Hairy cell leukemia variant
         - Hairy cell leukemia
-        - Hairy cell leukemia variant
+        # - Hairy cell leukemia variant
         - Hairy nevus
         - Halo nevus
         - Hand-Schuller-Christian disease

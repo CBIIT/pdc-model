@@ -13922,11 +13922,11 @@ Terms:
     Origin: PDC
     Value: Nipple
     Version: null
-  No:
+  'No':
     Code: null
     Definition: Ad hoc term
     Origin: PDC
-    Value: No
+    Value: 'No'
     Version: null
   No Metastasis:
     Code: null
@@ -18908,11 +18908,11 @@ Terms:
     Origin: ''
     Value: new_event_type
     Version: null
-  no:
+  'no':
     Code: null
     Definition: Ad hoc term
     Origin: PDC
-    Value: no
+    Value: 'no'
     Version: null
   normal_tumor_genotype_snp_match:
     Code: '4588156'
@@ -19758,11 +19758,11 @@ Terms:
     Origin: caDSR
     Value: year_of_diagnosis
     Version: null
-  yes:
+  'yes':
     Code: null
     Definition: Ad hoc term
     Origin: PDC
-    Value: yes
+    Value: 'yes'
     Version: null
   Âµg:
     Code: null
