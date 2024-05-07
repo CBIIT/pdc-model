@@ -1586,7 +1586,7 @@ PropDefinitions:
         Type: number
     analytical_technique:
         Desc: General strategy used for metabolomics analysis
-        Req: False (Required for metabolomics only)
+        Req: False
         Type: string
     anaplasia_present:
         Desc: Yes/no/unknown/not reported indicator used to describe whether anaplasia
@@ -2252,11 +2252,11 @@ PropDefinitions:
         Req: True
     chromatography_instrument_make:
         Desc: Manufacturer of chromatography instrument
-        Req: False (Required for metabolomics only)
+        Req: False
         Type: string
     chromatography_instrument_model:
         Desc: Model of chromatography instrument
-        Req: False (Required for metabolomics only)
+        Req: False
         Type: string
     chromosome:
         Desc: NCBI Gene chromosome
@@ -3720,7 +3720,7 @@ PropDefinitions:
         Type: string
     extraction_method:
         Desc: Method/Solution used for metabolite extraction
-        Req: False (Required for metabolomics only)
+        Req: False
         Type: string
     eye_color:
         Desc: The color of the iris of the eye
@@ -3878,7 +3878,7 @@ PropDefinitions:
         -   Code: '6133605'
             Origin: caDSR
             Value: first_symptom_prior_to_diagnosis
-    follow-up.bmi:
+    follow_up.bmi:
         Desc: A calculated numerical quantity that represents an individual's weight
             to height ratio.
         Req: False
@@ -3887,7 +3887,7 @@ PropDefinitions:
             Origin: caDSR
             Value: bmi
         Type: number
-    follow-up.days_to_recurrence:
+    follow_up.days_to_recurrence:
         Desc: Number of days between the date used for index and the date the patient's
             disease recurred.
         Req: False
@@ -3896,7 +3896,7 @@ PropDefinitions:
             Origin: caDSR
             Value: days_to_recurrence
         Type: integer
-    follow-up.height:
+    follow_up.height:
         Desc: 'The height of the patient in centimeters.
 
             '
@@ -3906,7 +3906,7 @@ PropDefinitions:
             Origin: caDSR
             Value: height
         Type: number
-    follow-up.hpv_positive_type:
+    follow_up.hpv_positive_type:
         Desc: 'Text classification to represent the strain or type of human papillomavirus
             identified in an individual.
 
@@ -3940,7 +3940,7 @@ PropDefinitions:
         -   Code: '2922649'
             Origin: caDSR
             Value: hpv_positive_type
-    follow-up.progression_or_recurrence:
+    follow_up.progression_or_recurrence:
         Desc: 'Yes/No/Unknown indicator to identify whether a patient has had a new
             tumor event after initial treatment.
 
@@ -3955,7 +3955,7 @@ PropDefinitions:
         -   Code: '3121376'
             Origin: caDSR
             Value: progression_or_recurrence
-    follow-up.weight:
+    follow_up.weight:
         Desc: 'The weight of the patient measured in kilograms.
 
             '
@@ -10176,7 +10176,7 @@ PropDefinitions:
         - positive
         - negative
         - postive/negative
-        Req: False (Required for metabolomics only)
+        Req: False
     protocol.program_id:
         Type: string
     protocol.program_submitter_id:
@@ -11509,7 +11509,7 @@ PropDefinitions:
         Enum:
         - positive
         - negative
-        Req: False (Required for metabolomics only)
+        Req: False
     study_run_metadata.protocol_id:
         Req: False
         Type: string

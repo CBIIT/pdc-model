@@ -328,7 +328,7 @@ Nodes:
         - md5sum
         - original_file_name
         - sha1
-    follow-up:
+    follow_up:
         Desc: 'A visit by a patient or study participant to a medical professional.
             A clinical encounter that encompasses planned and unplanned trial interventions,
             procedures and assessments that may be performed on a subject. A visit
@@ -737,22 +737,20 @@ Relationships:
         Ends:
         -   Dst: aliquot
             Src: aliquot_run_metadata
-        Mul: null
-        Props: null
+        Mul: many_to_one # inferred
         Req: 1
     of_analyte:
         Ends:
         -   Dst: analyte
             Src: aliquot
-        Mul: null
-        Props: null
+        Mul: many_to_one # inferred
         Req: 1
     of_case:
         Ends:
         -   Dst: case
             Src: family_history
         -   Dst: case
-            Src: follow-up
+            Src: follow_up
         -   Dst: case
             Src: diagnosis
         -   Dst: case
@@ -762,7 +760,6 @@ Relationships:
         -   Dst: case
             Src: sample
         Mul: many_to_one
-        Props: null
         Req: 1
     of_diagnosis:
         Ends:
@@ -771,7 +768,6 @@ Relationships:
         -   Dst: diagnosis
             Src: follow-up
         Mul: many_to_one
-        Props: null
         Req: 1
     of_gene:
         Ends:
@@ -779,22 +775,19 @@ Relationships:
             Src: protein_abundance
         -   Dst: gene
             Src: gene_abundance
-        Mul: null
-        Props: null
+        Mul: many_to_one # inferred
         Req: 1
     of_portion:
         Ends:
         -   Dst: portion
             Src: analyte
-        Mul: null
-        Props: null
+        Mul: many_to_one # inferred
         Req: 1
     of_program:
         Ends:
         -   Dst: program
             Src: project
-        Mul: null
-        Props: null
+        Mul: many_to_one # inferred
         Req: 1
     of_project:
         Ends:
@@ -802,8 +795,7 @@ Relationships:
             Src: case
         -   Dst: project
             Src: study
-        Mul: null
-        Props: null
+        Mul: many_to_one # inferred
         Req: 1
     of_sample:
         Ends:
@@ -813,8 +805,7 @@ Relationships:
             Src: analyte
         -   Dst: sample
             Src: portion
-        Mul: null
-        Props: null
+        Mul: many_to_one # inferred
         Req: 1
     of_study:
         Ends:
@@ -832,8 +823,7 @@ Relationships:
             Src: workflow_metadata
         -   Dst: study
             Src: study_run_metadata
-        Mul: null
-        Props: null
+        Mul: many_to_one # inferred
         Req: 1
     of_study_run_metadata:
         Ends:
@@ -845,6 +835,5 @@ Relationships:
             Src: aliquot_run_metadata
         -   Dst: study_run_metadata
             Src: gene_abundance
-        Mul: null
-        Props: null
+        Mul: many_to_one # inferred
         Req: 1
