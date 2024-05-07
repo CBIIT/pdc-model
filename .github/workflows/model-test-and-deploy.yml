@@ -15,7 +15,7 @@ jobs:
     uses: CBIIT/bento-workflows/.github/workflows/model-test-and-deploy.yml@v2.2.2
     with:
       model_files: |
-        pdc-model.yaml pdc-model-props.yaml pdc-model-terms.yaml
+        pdc-model.yaml pdc-model-props.yaml
       model_prefix: pdc-model
       event_name: ${{ github.event_name }}
       nodes_only_graph: yes

@@ -20,9 +20,9 @@ PropDefinitions:
     a260_a280_ratio:
         Desc: Numeric value that represents the sample ratio of nucleic acid absorbance
             at 260 nm and 280 nm, used to determine a measure of DNA purity.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432595
+        -   Code: '5432595'
             Origin: caDSR
             Value: a260_a280_ratio
         Type: number
@@ -38,7 +38,7 @@ PropDefinitions:
         Req: 'True'
     acquisition_file_name:
         Desc: Representative file name for one of the raw data file from the run
-        Req: 'False'
+        Req: False
         Type: string
     adrenal_hormone:
         Desc: Indicates the presence of the adrenal hormone. The adrenal hormone is
@@ -49,7 +49,7 @@ PropDefinitions:
         - true
         - false
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
         -   Code: C2264
             Origin: NCIt
@@ -850,9 +850,9 @@ PropDefinitions:
         - Wound Dehiscence
         - Wound Infection
         - Wrist Fracture
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3125302
+        -   Code: '3125302'
             Origin: caDSR
             Value: adverse_event
     adverse_event_grade:
@@ -864,32 +864,32 @@ PropDefinitions:
         - Grade 3
         - Grade 4
         - Grade 5
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2944515
+        -   Code: '2944515'
             Origin: caDSR
             Value: adverse_event_grade
     age_at_diagnosis:
         Desc: Age at the time of diagnosis expressed in number of days since birth.
         Req: 'True'
         Term:
-        -   Code: 3225640
+        -   Code: '3225640'
             Origin: caDSR
             Value: age_at_diagnosis
         Type: integer
     age_at_index:
         Desc: The patient's age (in years) on the reference or anchor date date used
             during date obfuscation.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6028530
+        -   Code: '6028530'
             Origin: caDSR
             Value: age_at_index
         Type: integer
     age_at_onset:
         Desc: Numeric value used to represent the age of the patient when exposure
             to a specific environmental factor began.
-        Req: 'False'
+        Req: False
         Type: integer
     age_is_obfuscated:
         Desc: 'The age of the patient has been modified for compliance reasons. The
@@ -897,7 +897,7 @@ PropDefinitions:
             patient may also be modified.
 
             '
-        Req: 'False'
+        Req: False
         Type: boolean
     aids_risk_factors:
         Desc: The text term used to describe a risk factor of  the acquired immunodeficiency
@@ -923,7 +923,7 @@ PropDefinitions:
         - Salmonella Septicemia
         - Toxoplasmosis
         - Wasting Syndrome
-        Req: 'False'
+        Req: False
     ajcc_clinical_m:
         Desc: Extent of the distant metastasis for the cancer based on evidence obtained
             from clinical assessment parameters determined prior to treatment.
@@ -938,9 +938,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3440331
+        -   Code: '3440331'
             Origin: caDSR
             Value: ajcc_clinical_m
     ajcc_clinical_n:
@@ -975,9 +975,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3440330
+        -   Code: '3440330'
             Origin: caDSR
             Value: ajcc_clinical_n
     ajcc_clinical_stage:
@@ -1023,9 +1023,9 @@ PropDefinitions:
         - Not Reported
         - Not Allowed To Collect
         - Stage IA3
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3440332
+        -   Code: '3440332'
             Origin: caDSR
             Value: ajcc_clinical_stage
     ajcc_clinical_t:
@@ -1069,9 +1069,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3440328
+        -   Code: '3440328'
             Origin: caDSR
             Value: ajcc_clinical_t
     ajcc_pathologic_m:
@@ -1092,9 +1092,9 @@ PropDefinitions:
         - Not Reported
         - Not Allowed To Collect
         - M1d
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3045439
+        -   Code: '3045439'
             Origin: caDSR
             Value: ajcc_pathologic_m
     ajcc_pathologic_n:
@@ -1129,9 +1129,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3203106
+        -   Code: '3203106'
             Origin: caDSR
             Value: ajcc_pathologic_n
     ajcc_pathologic_stage:
@@ -1174,9 +1174,9 @@ PropDefinitions:
         - Stage IIIA1
         - Stage IA3
         - Stage IIIA2
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3203222
+        -   Code: '3203222'
             Origin: caDSR
             Value: ajcc_pathologic_stage
     ajcc_pathologic_t:
@@ -1221,9 +1221,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3045435
+        -   Code: '3045435'
             Origin: caDSR
             Value: ajcc_pathologic_t
     ajcc_staging_system_edition:
@@ -1243,9 +1243,9 @@ PropDefinitions:
         - 8th
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2722309
+        -   Code: '2722309'
             Origin: caDSR
             Value: ajcc_staging_system_edition
     alcohol_days_per_week:
@@ -1253,9 +1253,9 @@ PropDefinitions:
             that a person consumes an alcoholic beverage.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3114013
+        -   Code: '3114013'
             Origin: caDSR
             Value: alcohol_days_per_week
         Type: number
@@ -1264,9 +1264,9 @@ PropDefinitions:
             person consumes per day.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3124961
+        -   Code: '3124961'
             Origin: caDSR
             Value: alcohol_drinks_per_day
         Type: number
@@ -1280,16 +1280,14 @@ PropDefinitions:
         - Not Reported
         - false
         - true
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2201918
+        -   Code: '2201918'
             Origin: caDSR
             Value: alcohol_history
     alcohol_intensity:
-        Desc: 'Category to describe the patient''s current level of alcohol use as
+        Desc: Category to describe the patient's current level of alcohol use as
             self-reported by the patient.
-
-            '
         Enum:
         - Drinker
         - Heavy Drinker
@@ -1298,9 +1296,9 @@ PropDefinitions:
         - Occasional Drinker
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3457767
+        -   Code: '3457767'
             Origin: caDSR
             Value: alcohol_intensity
     alcohol_type:
@@ -1312,20 +1310,20 @@ PropDefinitions:
         - Wine
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     alias:
         Desc: A plex or dataset name used by the submitters
-        Req: 'False'
+        Req: False
         Type: string
     aliquot.aliquot_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot.aliquot_submitter_id:
         Req: 'True'
         Type: string
     aliquot.amount:
         Desc: Weight in grams or volume in mL
-        Req: 'False'
+        Req: False
         Type: number
     aliquot.analyte_type:
         Desc: Text term that represents the kind of molecular specimen analyte.
@@ -1340,9 +1338,9 @@ PropDefinitions:
         - Repli-G X (Qiagen) DNA
         - RNA
         - Protein
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2513915
+        -   Code: '2513915'
             Origin: caDSR
             Value: analyte_type
     aliquot.analyte_type_id:
@@ -1357,18 +1355,18 @@ PropDefinitions:
         - T
         - W
         - X
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432508
+        -   Code: '5432508'
             Origin: caDSR
             Value: analyte_type_id
     aliquot.concentration:
         Desc: Numeric value that represents the concentration of an analyte or aliquot
             extracted from the sample or sample portion, measured in milligrams per
             milliliter.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432594
+        -   Code: '5432594'
             Origin: caDSR
             Value: concentration
         Type: number
@@ -1381,16 +1379,16 @@ PropDefinitions:
         - false
         Req: 'True'
     aliquot.project_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot.project_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot.sample_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot.sample_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot.status:
         Desc: Specifies if the aliquot is qualified or disqualified for any reason.
@@ -1409,80 +1407,80 @@ PropDefinitions:
     aliquot_quantity:
         Desc: The quantity in micrograms (ug) of the aliquot(s) derived from the analyte(s)
             shipped for sequencing and characterization.
-        Req: 'False'
+        Req: False
         Type: number
     aliquot_run_metadata.aliquot_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.aliquot_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.analyte:
         Desc: Type of peptide or protein enrichment
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.condition:
         Desc: 'Biological condition (ex: disease state) of the cases(patients) from
             which the aliquots derived.'
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.date:
         Desc: Date of the data acquired from the mass spectrometry instrument
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.experiment_number:
         Desc: Number associated with a specific run of the experiment
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.experiment_type:
         Desc: General strategy used for differential analysis
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.folder_name:
         Desc: Name used to group the files generated in single experimental run
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.fraction:
         Desc: Number of fractions in the experimental run
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.instrument:
         Desc: Make and model of the mass spectrometry instrument
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.operator:
         Desc: Mass Spectrometry instrument operator
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.protocol_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.protocol_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.replicate_number:
         Desc: Replicate number, if applicable
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.study_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.study_run_metadata_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.study_run_metadata_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata.study_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_run_metadata_id:
-        Req: 'False'
+        Req: False
         Type: string
     aliquot_volume:
         Desc: The volume in microliters (ml) of the aliquot(s) derived from the analyte(s)
             shipped for sequencing and characterization.
-        Req: 'False'
+        Req: False
         Type: number
     alkylation_reagent:
         Desc: Reagent used for cysteine alkylation
@@ -1494,15 +1492,15 @@ PropDefinitions:
         Req: 'True'
     amount_on_column:
         Desc: Approximate mass with units
-        Req: 'False'
+        Req: False
         Type: number
     amount_on_column_uom:
         Desc: Unit of Measure of amount_on_column
-        Req: 'False'
+        Req: False
         Type: string
     analyte.amount:
         Desc: Weight in grams or volume in mL
-        Req: 'False'
+        Req: False
         Type: number
     analyte.analyte_type:
         Desc: Text term that represents the kind of molecular specimen analyte.
@@ -1521,7 +1519,7 @@ PropDefinitions:
         - Nuclei RNA
         Req: 'True'
         Term:
-        -   Code: 2513915
+        -   Code: '2513915'
             Origin: caDSR
             Value: analyte_type
     analyte.analyte_type_id:
@@ -1537,54 +1535,54 @@ PropDefinitions:
         - W
         - X
         - Y
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432508
+        -   Code: '5432508'
             Origin: caDSR
             Value: analyte_type_id
     analyte.concentration:
         Desc: Numeric value that represents the concentration of an analyte or aliquot
             extracted from the sample or sample portion, measured in milligrams per
             milliliter.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432594
+        -   Code: '5432594'
             Origin: caDSR
             Value: concentration
         Type: number
     analyte.portion_id:
-        Req: 'False'
+        Req: False
         Type: string
     analyte.portion_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     analyte.project_id:
-        Req: 'False'
+        Req: False
         Type: string
     analyte.project_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     analyte.sample_id:
-        Req: 'False'
+        Req: False
         Type: string
     analyte.sample_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     analyte_id:
-        Req: 'False'
+        Req: False
         Type: string
     analyte_quantity:
         Desc: The quantity in micrograms (ug) of the analyte(s) derived from the analyte(s)
             shipped for sequencing and characterization.
-        Req: 'False'
+        Req: False
         Type: number
     analyte_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     analyte_volume:
         Desc: The volume in microliters (ml) of the aliquot(s) derived from the analyte(s)
             shipped for sequencing and characterization.
-        Req: 'False'
+        Req: False
         Type: number
     analytical_technique:
         Desc: General strategy used for metabolomics analysis
@@ -1598,9 +1596,9 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6059599
+        -   Code: '6059599'
             Origin: caDSR
             Value: anaplasia_present
     anaplasia_present_type:
@@ -1617,9 +1615,9 @@ PropDefinitions:
         - Sclerosis
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4925534
+        -   Code: '4925534'
             Origin: caDSR
             Value: anaplasia_present_type
     ann_arbor_b_symptoms:
@@ -1631,9 +1629,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2902402
+        -   Code: '2902402'
             Origin: caDSR
             Value: ann_arbor_b_symptoms
     ann_arbor_b_symptoms_described:
@@ -1643,7 +1641,7 @@ PropDefinitions:
         - Night Sweats
         - Other
         - Weight Loss
-        Req: 'False'
+        Req: False
     ann_arbor_clinical_stage:
         Desc: The text term used to describe the clinical classification of lymphoma,
             as defined by the Ann Arbor Lymphoma Staging System.
@@ -1654,9 +1652,9 @@ PropDefinitions:
         - Stage IV
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5615604
+        -   Code: '5615604'
             Origin: caDSR
             Value: ann_arbor_clinical_stage
     ann_arbor_extranodal_involvement:
@@ -1668,9 +1666,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3364582
+        -   Code: '3364582'
             Origin: caDSR
             Value: ann_arbor_extranodal_involvement
     ann_arbor_pathologic_stage:
@@ -1683,9 +1681,9 @@ PropDefinitions:
         - Stage IV
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5615605
+        -   Code: '5615605'
             Origin: caDSR
             Value: ann_arbor_pathologic_stage
     asbestos_exposure:
@@ -1698,32 +1696,30 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 1253
+        -   Code: '1253'
             Origin: caDSR
             Value: asbestos_exposure
     assays:
         Desc: CPTAC Assay accessions for the peptides associated with the gene
-        Req: 'False'
+        Req: False
         Type: string
     authority:
         Desc: HGNC Identifier
         Req: 'True'
         Type: string
     barretts_esophagus_goblet_cells_present:
-        Desc: 'The yes/no/unknown indicator used to describe whether goblet cells
-            were determined to be present in a patient diagnosed with Barrett''s esophagus.
-
-            '
+        Desc: The yes/no/unknown indicator used to describe whether goblet cells
+            were determined to be present in a patient diagnosed with Barrett's esophagus.
         Enum:
         - true
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3440216
+        -   Code: '3440216'
             Origin: caDSR
             Value: barretts_esophagus_goblet_cells_present
     best_overall_response:
@@ -1756,9 +1752,9 @@ PropDefinitions:
         - SPD-Surgical Progression
         - TE-Too Early
         - VGPR-Very Good Partial Response
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2003324
+        -   Code: '2003324'
             Origin: caDSR
             Value: best_overall_response
     biospecimen_anatomic_site:
@@ -2056,9 +2052,9 @@ PropDefinitions:
         - Supraglottis
         - Subglottis
         - Glottis
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4742851
+        -   Code: '4742851'
             Origin: caDSR
             Value: biospecimen_anatomic_site
     biospecimen_laterality:
@@ -2070,17 +2066,17 @@ PropDefinitions:
         - Right
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2007875
+        -   Code: '2007875'
             Origin: caDSR
             Value: biospecimen_laterality
     body_surface_area:
         Desc: Numeric value used to represent the 2-dimensional extent of the body
             surface relating height to weight.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 653
+        -   Code: '653'
             Origin: caDSR
             Value: body_surface_area
         Type: number
@@ -2089,9 +2085,9 @@ PropDefinitions:
             upper layer of the epidermis and the deepest point of tumor penetration.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 64809
+        -   Code: '64809'
             Origin: caDSR
             Value: breslow_thickness
         Type: integer
@@ -2107,13 +2103,13 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3770421
+        -   Code: '3770421'
             Origin: caDSR
             Value: burkitt_lymphoma_clinical_variant
     case.case_id:
-        Req: 'False'
+        Req: False
         Type: string
     case.case_submitter_id:
         Req: 'True'
@@ -2127,10 +2123,10 @@ PropDefinitions:
         - false
         Req: 'True'
     case.project_id:
-        Req: 'False'
+        Req: False
         Type: string
     case.project_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     case.status:
         Desc: Specifies if the case is qualified or disqualified for any reason. Usually
@@ -2145,10 +2141,10 @@ PropDefinitions:
         Enum:
         - true
         - false
-        Req: 'False'
+        Req: False
     catalog_reference:
         Desc: HCMI catalog reference number for cancer model.
-        Req: 'False'
+        Req: False
         Type: string
     cause_of_death:
         Desc: Text term to identify the cause of death for a patient.
@@ -2164,16 +2160,14 @@ PropDefinitions:
         - Toxicity
         - Not Reported
         - Unknown
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2554674
+        -   Code: '2554674'
             Origin: caDSR
             Value: cause_of_death
     cause_of_death_source:
-        Desc: 'The text term used to describe the source used to determine the patient''s
+        Desc: The text term used to describe the source used to determine the patient's
             cause of death.
-
-            '
         Enum:
         - Autopsy
         - Death Certificate
@@ -2181,30 +2175,30 @@ PropDefinitions:
         - Social Security Death Index
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     cause_of_response:
         Desc: 'The text term used to describe the suspected cause or reason for the
             patient disease response.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6161025
+        -   Code: '6161025'
             Origin: caDSR
             Value: cause_of_response
         Type: string
     cd4_count:
         Desc: The text term used to describe the outcome of the procedure to determine
             the amount of the CD4 expressing cells in a sample.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4182751
+        -   Code: '4182751'
             Origin: caDSR
             Value: cd4_count
         Type: number
     cdap_reports:
         Desc: Name and version of the tool used to generate protein summary reports
-        Req: 'False'
+        Req: False
         Type: string
     cdc_hiv_risk_factors:
         Desc: The text term used to describe a risk factor for human immunodeficiency
@@ -2218,7 +2212,7 @@ PropDefinitions:
         - Transfusion Recipient
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     chemo_concurrent_to_radiation:
         Desc: The text term used to describe whether the patient was receiving chemotherapy
             concurrent to radiation.
@@ -2227,7 +2221,7 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     child_pugh_classification:
         Desc: The text term used to describe the classification used in the prognosis
             of chronic liver disease, mainly cirrhosis.
@@ -2245,9 +2239,9 @@ PropDefinitions:
         - C12
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2931791
+        -   Code: '2931791'
             Origin: caDSR
             Value: child_pugh_classification
     chromatography_dimensions_count:
@@ -2272,9 +2266,9 @@ PropDefinitions:
         Desc: 'The average number of cigarettes smoked per day.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2001716
+        -   Code: '2001716'
             Origin: caDSR
             Value: cigarettes_per_day
         Type: number
@@ -2282,9 +2276,9 @@ PropDefinitions:
         Desc: Numeric value used to describe the non-peritonealised bare area of rectum,
             comprising anterior and posterior segments, when submitted as a surgical
             specimen resulting from excision of cancer of the rectum.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6161030
+        -   Code: '6161030'
             Origin: caDSR
             Value: circumferential_resection_margin
         Type: integer
@@ -2301,9 +2295,9 @@ PropDefinitions:
         - Not Allowed To Collect
         - Progression
         - Premalignant
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3288124
+        -   Code: '3288124'
             Origin: caDSR
             Value: classification_of_tumor
     coal_dust_exposure:
@@ -2315,7 +2309,7 @@ PropDefinitions:
         - true
         - false
         - Unknown
-        Req: 'False'
+        Req: False
     cog_liver_stage:
         Desc: The text term used to describe the staging classification of liver tumors,
             as defined by the Children's Oncology Group (COG). This staging system
@@ -2327,9 +2321,9 @@ PropDefinitions:
         - Stage IV
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6013618
+        -   Code: '6013618'
             Origin: caDSR
             Value: cog_liver_stage
     cog_neuroblastoma_risk_group:
@@ -2342,9 +2336,9 @@ PropDefinitions:
         - Low Risk
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4616452
+        -   Code: '4616452'
             Origin: caDSR
             Value: cog_neuroblastoma_risk_group
     cog_renal_stage:
@@ -2357,9 +2351,9 @@ PropDefinitions:
         - Stage IV
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6013641
+        -   Code: '6013641'
             Origin: caDSR
             Value: cog_renal_stage
     cog_rhabdomyosarcoma_risk_group:
@@ -2371,32 +2365,32 @@ PropDefinitions:
         - Low Risk
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6133604
+        -   Code: '6133604'
             Origin: caDSR
             Value: cog_rhabdomyosarcoma_risk_group
     colon_polyps_history:
         Desc: Yes/No indicator to describe if the subject had a previous history of
             colon polyps as noted in the history/physical or previous endoscopic report
             (s).
-        Req: 'False'
+        Req: False
         Type: string
     column_inner_diameter:
         Desc: Approximate diameter with units
-        Req: 'False'
+        Req: False
         Type: number
     column_inner_diameter_uom:
         Desc: "Unit of Measure of column_inner_diameter, \xC2\xB5m"
-        Req: 'False'
+        Req: False
         Type: string
     column_length:
         Desc: Approximate length with units
-        Req: 'False'
+        Req: False
         Type: integer
     column_length_uom:
         Desc: Unit of Measure of column_length, cm
-        Req: 'False'
+        Req: False
         Type: string
     column_type:
         Desc: Type of column used
@@ -2404,12 +2398,10 @@ PropDefinitions:
         - C18
         - New Objective
         - PicoFrit SELF/P
-        Req: 'False'
+        Req: False
     comorbidity:
-        Desc: 'The text term used to describe a comorbidity disease, which coexists
-            with the patient''s malignant disease.
-
-            '
+        Desc: The text term used to describe a comorbidity disease, which coexists
+            with the patient's malignant disease.
         Enum:
         - Acute Renal Failure
         - Adenocarcinoma
@@ -2580,25 +2572,23 @@ PropDefinitions:
         - Pneumocystis Pneumonia
         - Shingles
         - Fibromyalgia
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2970715
+        -   Code: '2970715'
             Origin: caDSR
             Value: comorbidity
     comorbidity_method_of_diagnosis:
-        Desc: 'The text term used to describe the method used to diagnose the patient''s
+        Desc: The text term used to describe the method used to diagnose the patient's
             comorbidity disease.
-
-            '
         Enum:
         - Histology
         - Pathology
         - Radiology
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6142386
+        -   Code: '6142386'
             Origin: caDSR
             Value: comorbidity_method_of_diagnosis
     composition:
@@ -2640,7 +2630,7 @@ PropDefinitions:
         - Mixed Adherent Suspension
         Req: 'True'
         Term:
-        -   Code: 5432591
+        -   Code: '5432591'
             Origin: caDSR
             Value: composition
     consent_type:
@@ -2651,7 +2641,7 @@ PropDefinitions:
         - Consent Exemption
         - Consent Waiver
         - Informed Consent
-        Req: 'False'
+        Req: False
     country_of_residence_at_enrollment:
         Desc: The text term used to describe the patient's country of residence at
             the time they were enrolled in the study.
@@ -2888,45 +2878,45 @@ PropDefinitions:
         - Yemen
         - Zambia
         - Zimbabwe
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 7050286
+        -   Code: '7050286'
             Origin: caDSR
             Value: country_of_residence_at_enrollment
     cptac_dcc_mzidentml:
         Desc: Name and version of the tool used to generate mzIdentML from the peptide
             spectral match report
-        Req: 'False'
+        Req: False
         Type: string
     cptac_dcc_tools:
         Desc: Name and version of the custom scripts used in the data analysis pipeline
-        Req: 'False'
+        Req: False
         Type: string
     cptac_galaxy_tools:
         Desc: Name and version of the custom scripts used in the data analysis pipeline
-        Req: 'False'
+        Req: False
         Type: string
     cptac_galaxy_workflows:
         Desc: Name and version of the workflow of data analysis pipeline
-        Req: 'False'
+        Req: False
         Type: string
     cptac_study_id:
-        Req: 'False'
+        Req: False
         Type: string
     creation_datetime:
         Desc: The datetime of portion creation encoded as seconds from epoch.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432592
+        -   Code: '5432592'
             Origin: caDSR
             Value: creation_datetime
         Type: integer
     current_weight:
         Desc: Numeric value that represents the current weight of the sample, measured
             in milligrams.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432606
+        -   Code: '5432606'
             Origin: caDSR
             Value: current_weight
         Type: number
@@ -2935,40 +2925,38 @@ PropDefinitions:
         Req: 'True'
         Type: string
     days_to_adverse_event:
-        Desc: 'Number of days between the date used for index and the date of the
-            patient''s adverse event.
-
-            '
-        Req: 'False'
+        Desc: Number of days between the date used for index and the date of the
+            patient's adverse event.
+        Req: False
         Term:
-        -   Code: 6154728
+        -   Code: '6154728'
             Origin: caDSR
             Value: days_to_adverse_event
         Type: integer
     days_to_best_overall_response:
         Desc: Number of days between the date used for index and the date of the patient
             was thought to have the best overall response to their disease.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154732
+        -   Code: '6154732'
             Origin: caDSR
             Value: days_to_best_overall_response
         Type: integer
     days_to_birth:
         Desc: Number of days between the date used for index and the date from a person's
             date of birth represented as a calculated negative number of days.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154723
+        -   Code: '6154723'
             Origin: caDSR
             Value: days_to_birth
         Type: integer
     days_to_collection:
         Desc: Time interval from the date of biospecimen collection to the date of
             initial pathologic diagnosis, represented as a calculated number of days.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3008340
+        -   Code: '3008340'
             Origin: caDSR
             Value: days_to_collection
         Type: integer
@@ -2977,43 +2965,41 @@ PropDefinitions:
             was diagnosed with a comorbidity.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154729
+        -   Code: '6154729'
             Origin: caDSR
             Value: days_to_comorbidity
         Type: integer
     days_to_consent:
         Desc: Number of days between the date used for index and the date the subject
             consent was obtained for participation in the study.
-        Req: 'False'
+        Req: False
         Type: integer
     days_to_death:
         Desc: Number of days between the date used for index and the date from a person's
             date of death represented as a calculated number of days.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154724
+        -   Code: '6154724'
             Origin: caDSR
             Value: days_to_death
         Type: integer
     days_to_diagnosis:
         Desc: Number of days between the date used for index and the date the patient
             was diagnosed with the malignant disease.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154733
+        -   Code: '6154733'
             Origin: caDSR
             Value: days_to_diagnosis
         Type: integer
     days_to_follow_up:
-        Desc: 'Number of days between the date used for index and the date of the
-            patient''s last follow-up appointment or contact.
-
-            '
+        Desc: Number of days between the date used for index and the date of the
+            patient's last follow-up appointment or contact.
         Req: 'True'
         Term:
-        -   Code: 6154727
+        -   Code: '6154727'
             Origin: caDSR
             Value: days_to_follow_up
         Type: integer
@@ -3021,28 +3007,28 @@ PropDefinitions:
         Desc: Time interval from the date of the initial pathologic diagnosis to the
             date of human immunodeficiency diagnosis, represented as a calculated
             number of days.
-        Req: 'False'
+        Req: False
         Type: string
     days_to_imaging:
         Desc: Number of days between the date used for index and the date the imaging
             or scan was performed on the patient.
-        Req: 'False'
+        Req: False
         Type: integer
     days_to_last_follow_up:
         Desc: Time interval from the date of last follow up to the date of initial
             pathologic diagnosis, represented as a calculated number of days.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3008273
+        -   Code: '3008273'
             Origin: caDSR
             Value: days_to_last_follow_up
         Type: number
     days_to_last_known_disease_status:
         Desc: Time interval from the date of last follow up to the date of initial
             pathologic diagnosis, represented as a calculated number of days.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3008273
+        -   Code: '3008273'
             Origin: caDSR
             Value: days_to_last_known_disease_status
         Type: number
@@ -3050,7 +3036,7 @@ PropDefinitions:
         Desc: The number of days between the date used for index and to the date the
             patient was lost to follow-up.
         Term:
-        -   Code: 6154721
+        -   Code: '6154721'
             Origin: caDSR
             Value: days_to_lost_to_followup
         Type: integer
@@ -3058,39 +3044,35 @@ PropDefinitions:
         Desc: Time interval from the date of new tumor event including progression,
             recurrence and new primary malignancies to the date of initial pathologic
             diagnosis, represented as a calculated number of days.
-        Req: 'False'
+        Req: False
         Type: string
     days_to_progression:
-        Desc: 'Number of days between the date used for index and the date the patient''s
+        Desc: Number of days between the date used for index and the date the patient's
             disease progressed.
-
-            '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154730
+        -   Code: '6154730'
             Origin: caDSR
             Value: days_to_progression
         Type: integer
     days_to_progression_free:
-        Desc: 'Number of days between the date used for index and the date the patient''s
+        Desc: Number of days between the date used for index and the date the patient's
             disease was formally confirmed as progression-free.
-
-            '
-        Req: 'False'
+        Req: False
         Type: integer
     days_to_sample_procurement:
         Desc: The number of days from the date the patient was diagnosed to the date
             of the procedure that produced the sample.
-        Req: 'False'
+        Req: False
         Type: integer
     days_to_treatment_end:
         Desc: 'Number of days between the date used for index and the date the treatment
             ended.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154725
+        -   Code: '6154725'
             Origin: caDSR
             Value: days_to_treatment_end
         Type: integer
@@ -3099,37 +3081,37 @@ PropDefinitions:
             started.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154726
+        -   Code: '6154726'
             Origin: caDSR
             Value: days_to_treatment_start
         Type: integer
     dbgap_control_number:
         Desc: Study identifier from database of genotypes and phenotypes (dbGaP)
-        Req: 'False'
+        Req: False
         Type: string
     dda_topn:
         Desc: Number of precursors sampled per cycle
-        Req: 'False'
+        Req: False
         Type: string
     demographic.case_id:
-        Req: 'False'
+        Req: False
         Type: string
     demographic.case_submitter_id:
         Req: 'True'
         Type: string
     demographic.project_id:
-        Req: 'False'
+        Req: False
         Type: string
     demographic.project_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     demographic_id:
-        Req: 'False'
+        Req: False
         Type: string
     demographic_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     dia_ims:
         Desc: Numeric value that represents the current weight of the sample, measured
@@ -3137,7 +3119,7 @@ PropDefinitions:
         Enum:
         - true
         - false
-        Req: 'False'
+        Req: False
     dia_multiplexing:
         Desc: Uses overlapping windows (MSX)
         Enum:
@@ -3164,13 +3146,13 @@ PropDefinitions:
         - Other
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3587247
+        -   Code: '3587247'
             Origin: caDSR
             Value: diabetes_treatment_type
     diagnosis.case_id:
-        Req: 'False'
+        Req: False
         Type: string
     diagnosis.case_submitter_id:
         Req: 'True'
@@ -3178,16 +3160,16 @@ PropDefinitions:
     diagnosis.days_to_recurrence:
         Desc: Number of days between the date used for index and the date the patient's
             disease recurred.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154731
+        -   Code: '6154731'
             Origin: caDSR
             Value: days_to_recurrence
         Type: number
     diagnosis.hpv_positive_type:
         Desc: Text classification to represent the strain or type of human papillomavirus
             identified in an individual.
-        Req: 'False'
+        Req: False
         Type: string
     diagnosis.progression_or_recurrence:
         Desc: Yes/No/Unknown indicator to identify whether a patient has had a new
@@ -3200,17 +3182,17 @@ PropDefinitions:
         - Not Allowed To Collect
         Req: 'True'
         Term:
-        -   Code: 3121376
+        -   Code: '3121376'
             Origin: caDSR
             Value: progression_or_recurrence
     diagnosis.project_id:
-        Req: 'False'
+        Req: False
         Type: string
     diagnosis.project_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     diagnosis_id:
-        Req: 'False'
+        Req: False
         Type: string
     diagnosis_is_primary_disease:
         Desc: Indicates whether this specific diagnosis represents the disease that
@@ -3228,9 +3210,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
     diagnosis_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     digestion_reagent:
         Desc: Enzyme or reagent used for digestion. Multiple enzymes can be separated
@@ -3262,10 +3244,8 @@ PropDefinitions:
             Origin: PSI MS
             Value: digestion_reagent
     disease_response:
-        Desc: 'Code assigned to describe the patient''s response or outcome to the
+        Desc: Code assigned to describe the patient's response or outcome to the
             disease.
-
-            '
         Enum:
         - AJ-Adjuvant Therapy
         - BED-Biochemical Evidence of Disease
@@ -3300,9 +3280,9 @@ PropDefinitions:
         - WT-With Tumor
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5750671
+        -   Code: '5750671'
             Origin: caDSR
             Value: disease_response
     disease_type:
@@ -3426,7 +3406,7 @@ PropDefinitions:
         - Pancreatic Ductal Adenocarcinoma
         Req: 'True'
         Term:
-        -   Code: 6161017
+        -   Code: '6161017'
             Origin: caDSR
             Value: disease_type
     dissociation_type:
@@ -3449,45 +3429,43 @@ PropDefinitions:
         - Distal (>2cm)
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3088708
+        -   Code: '3088708'
             Origin: caDSR
             Value: distance_normal_to_tumor
     distinct_peptide:
         Desc: Number of distinct peptide sequences associated with the gene in acquisitions
             from a specific analytical sample
-        Req: 'False'
+        Req: False
         Type: number
     distributor_reference:
         Desc: Distributor reference number for cancer model.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3088708
+        -   Code: '3088708'
             Origin: caDSR
             Value: distributor_reference
         Type: string
     dlco_ref_predictive_percent:
-        Desc: 'The value, as a percentage of predicted lung volume, measuring the
-            amount of carbon monoxide detected in a patient''s lungs.
-
-            '
-        Req: 'False'
+        Desc: The value, as a percentage of predicted lung volume, measuring the
+            amount of carbon monoxide detected in a patient's lungs.
+        Req: False
         Term:
-        -   Code: 2180255
+        -   Code: '2180255'
             Origin: caDSR
             Value: dlco_ref_predictive_percent
         Type: number
     document_name:
         Desc: Name of protocol document
-        Req: 'False'
+        Req: False
         Type: string
     downloadable:
         Desc: Indicates if the file is downloadable from PDC data portal
         Enum:
         - true
         - false
-        Req: 'False'
+        Req: False
     ecog_performance_status:
         Desc: 'The ECOG functional performance status of the patient/participant.
 
@@ -3501,9 +3479,9 @@ PropDefinitions:
         - '5'
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 88
+        -   Code: '88'
             Origin: caDSR
             Value: ecog_performance_status
     eln_risk_classification:
@@ -3516,10 +3494,10 @@ PropDefinitions:
         - Intermediate
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     end_date:
         Desc: End date of the program
-        Req: 'False'
+        Req: False
         Type: date
     enneking_msts_grade:
         Desc: The text term used to describe the surgical grade of the musculoskeletal
@@ -3530,9 +3508,9 @@ PropDefinitions:
         - Low Grade (G1)
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6003955
+        -   Code: '6003955'
             Origin: caDSR
             Value: enneking_msts_grade
     enneking_msts_metastasis:
@@ -3544,9 +3522,9 @@ PropDefinitions:
         - Regional or Distant Metastasis (M1)
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6003958
+        -   Code: '6003958'
             Origin: caDSR
             Value: enneking_msts_metastasis
     enneking_msts_stage:
@@ -3561,9 +3539,9 @@ PropDefinitions:
         - Stage III
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6060045
+        -   Code: '6060045'
             Origin: caDSR
             Value: enneking_msts_stage
     enneking_msts_tumor_site:
@@ -3575,9 +3553,9 @@ PropDefinitions:
         - Intracompartmental (T1)
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6003957
+        -   Code: '6003957'
             Origin: caDSR
             Value: enneking_msts_tumor_site
     enrichment:
@@ -3606,7 +3584,7 @@ PropDefinitions:
         - true
         - false
         - Unknown
-        Req: 'False'
+        Req: False
     esophageal_columnar_dysplasia_degree:
         Desc: Text term to describe the amount of dysplasia found within the benign
             esophageal columnar mucosa.
@@ -3617,9 +3595,9 @@ PropDefinitions:
         - Negative/ No Dysplasia
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3440917
+        -   Code: '3440917'
             Origin: caDSR
             Value: esophageal_columnar_dysplasia_degree
     esophageal_columnar_metaplasia_present:
@@ -3630,9 +3608,9 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3440218
+        -   Code: '3440218'
             Origin: caDSR
             Value: esophageal_columnar_metaplasia_present
     ethnicity:
@@ -3648,7 +3626,7 @@ PropDefinitions:
         - Unknown
         Req: 'True'
         Term:
-        -   Code: 2192217
+        -   Code: '2192217'
             Origin: caDSR
             Value: ethnicity
     evidence_of_recurrence_type:
@@ -3659,7 +3637,7 @@ PropDefinitions:
         - Convincing Image Source
         - Physical Examination
         - Positive Biomarker(s)
-        Req: 'False'
+        Req: False
     experimental_protocol_type:
         Desc: The type of experiment used to extract the analyte.
         Enum:
@@ -3675,17 +3653,15 @@ PropDefinitions:
         - Repli-G
         - Repli-G X
         - Total RNA
-        Req: 'False'
+        Req: False
     exposure.bmi:
-        Desc: 'A calculated numerical quantity that represents an individual''s weight
+        Desc: A calculated numerical quantity that represents an individual's weight
             to height ratio.
-
-            '
-        Req: 'False'
+        Req: False
         Tags:
             Deprecated: true
         Term:
-        -   Code: 2006410
+        -   Code: '2006410'
             Origin: caDSR
             Value: bmi
         Type: integer
@@ -3693,11 +3669,11 @@ PropDefinitions:
         Desc: 'The height of the patient in centimeters.
 
             '
-        Req: 'False'
+        Req: False
         Tags:
             Deprecated: true
         Term:
-        -   Code: 649
+        -   Code: '649'
             Origin: caDSR
             Value: height
         Type: integer
@@ -3705,11 +3681,11 @@ PropDefinitions:
         Desc: 'The weight of the patient measured in kilograms.
 
             '
-        Req: 'False'
+        Req: False
         Tags:
             Deprecated: true
         Term:
-        -   Code: 651
+        -   Code: '651'
             Origin: caDSR
             Value: weight
         Type: integer
@@ -3720,10 +3696,10 @@ PropDefinitions:
         - Six Weeks or More
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     exposure_duration_years:
         Desc: The period of time from start to finish of exposure, in years.
-        Req: 'False'
+        Req: False
         Term:
         -   Code: C83280
             Origin: NCIt
@@ -3737,10 +3713,10 @@ PropDefinitions:
         - Smoke
         - Tobacco
         - Wood Dust
-        Req: 'False'
+        Req: False
     external_case_id:
         Desc: Identifier from other resources for this case
-        Req: 'False'
+        Req: False
         Type: string
     extraction_method:
         Desc: Method/Solution used for metabolite extraction
@@ -3758,7 +3734,7 @@ PropDefinitions:
         - Red & Violet
         - Other
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
         -   Code: C157437
             Origin: NCIt
@@ -3768,9 +3744,9 @@ PropDefinitions:
             1 second (FEV1) divided by the Forced Vital Capacity (FVC) post-bronchodilator.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3302956
+        -   Code: '3302956'
             Origin: caDSR
             Value: fev1_fvc_post_bronch_percent
         Type: number
@@ -3779,9 +3755,9 @@ PropDefinitions:
             1 second (FEV1) divided by the Forced Vital Capacity (FVC) pre-bronchodilator.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3302955
+        -   Code: '3302955'
             Origin: caDSR
             Value: fev1_fvc_pre_bronch_percent
         Type: number
@@ -3791,9 +3767,9 @@ PropDefinitions:
             second post-bronchodilator.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3302948
+        -   Code: '3302948'
             Origin: caDSR
             Value: fev1_ref_post_bronch_percent
         Type: number
@@ -3803,9 +3779,9 @@ PropDefinitions:
             second pre-bronchodilator.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3302947
+        -   Code: '3302947'
             Origin: caDSR
             Value: fev1_ref_pre_bronch_percent
         Type: number
@@ -3849,9 +3825,9 @@ PropDefinitions:
         - Stage IIIA1
         - Stage IIIAi
         - Stage IC3
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3225684
+        -   Code: '3225684'
             Origin: caDSR
             Value: figo_stage
     figo_staging_edition_year:
@@ -3861,13 +3837,13 @@ PropDefinitions:
         - '1988'
         - '1995'
         - '2009'
-        Req: 'False'
+        Req: False
     file_format:
         Desc: Format of the file
         Req: 'True'
         Type: string
     file_id:
-        Req: 'False'
+        Req: False
         Type: string
     file_location:
         Desc: Physical location of the file on the server
@@ -3897,30 +3873,26 @@ PropDefinitions:
         - Visual Changes
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6133605
+        -   Code: '6133605'
             Origin: caDSR
             Value: first_symptom_prior_to_diagnosis
     follow-up.bmi:
-        Desc: 'A calculated numerical quantity that represents an individual''s weight
+        Desc: A calculated numerical quantity that represents an individual's weight
             to height ratio.
-
-            '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2006410
+        -   Code: '2006410'
             Origin: caDSR
             Value: bmi
         Type: number
     follow-up.days_to_recurrence:
-        Desc: 'Number of days between the date used for index and the date the patient''s
+        Desc: Number of days between the date used for index and the date the patient's
             disease recurred.
-
-            '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154731
+        -   Code: '6154731'
             Origin: caDSR
             Value: days_to_recurrence
         Type: integer
@@ -3928,9 +3900,9 @@ PropDefinitions:
         Desc: 'The height of the patient in centimeters.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 649
+        -   Code: '649'
             Origin: caDSR
             Value: height
         Type: number
@@ -3963,9 +3935,9 @@ PropDefinitions:
         - Other
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2922649
+        -   Code: '2922649'
             Origin: caDSR
             Value: hpv_positive_type
     follow-up.progression_or_recurrence:
@@ -3978,18 +3950,18 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3121376
+        -   Code: '3121376'
             Origin: caDSR
             Value: progression_or_recurrence
     follow-up.weight:
         Desc: 'The weight of the patient measured in kilograms.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 651
+        -   Code: '651'
             Origin: caDSR
             Value: weight
         Type: number
@@ -4004,9 +3976,9 @@ PropDefinitions:
         Type: integer
     freezing_method:
         Desc: Text term that represents the method used for freezing the sample.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432607
+        -   Code: '5432607'
             Origin: caDSR
             Value: freezing_method
         Type: string
@@ -4018,18 +3990,18 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6059632
+        -   Code: '6059632'
             Origin: caDSR
             Value: gastric_esophageal_junction_involvement
     gdc_project_id:
         Desc: Project identifier associated with the sample at the genomic data commons
-        Req: 'False'
+        Req: False
         Type: string
     gdc_sample_id:
         Desc: Sample identifier associated with the sample at the genomic data commons
-        Req: 'False'
+        Req: False
         Type: string
     gender:
         Desc: 'Text designations that identify gender. Gender is described as the
@@ -4044,7 +4016,7 @@ PropDefinitions:
         - not reported
         Req: 'True'
         Term:
-        -   Code: 2200604
+        -   Code: '2200604'
             Origin: caDSR
             Value: gender
     gene.description:
@@ -4052,7 +4024,7 @@ PropDefinitions:
         Req: 'True'
         Type: string
     gene.gene_id:
-        Req: 'False'
+        Req: False
         Type: string
     gene.gene_name:
         Desc: NCBI Gene name
@@ -4060,11 +4032,11 @@ PropDefinitions:
         Type: string
     gene_abundance.aliquot_id:
         Desc: Aliquot Identifier
-        Req: 'False'
+        Req: False
         Type: string
     gene_abundance.aliquot_submitter_id:
         Desc: Aliquot Submitter ID
-        Req: 'False'
+        Req: False
         Type: string
     gene_abundance.gene_id:
         Desc: Gene Identifier
@@ -4077,20 +4049,20 @@ PropDefinitions:
     gene_abundance.precursor_area:
         Desc: Total precursor area of peptide ions associated with the gene in acquisitions
             from a specific biological sample.
-        Req: 'False'
+        Req: False
         Type: double
     gene_abundance.unshared_precursor_area:
         Desc: Total precursor area of peptide ions of unshared peptides only associated
             with the gene in acquisitions from a specific biological sample.
-        Req: 'False'
+        Req: False
         Type: double
     gene_abundance_id:
-        Req: 'False'
+        Req: False
         Type: string
     gene_to_prot:
         Desc: Name and version of the tool used to map gene to protein in the data
             analysis pipeline
-        Req: 'False'
+        Req: False
         Type: string
     gleason_grade_group:
         Desc: 'The text term used to describe the overall grouping of grades defined
@@ -4107,9 +4079,9 @@ PropDefinitions:
         - Group 4
         - Group 5
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5918370
+        -   Code: '5918370'
             Origin: caDSR
             Value: gleason_grade_group
     gleason_grade_tertiary:
@@ -4118,11 +4090,11 @@ PropDefinitions:
         Enum:
         - Pattern 4
         - Pattern 5
-        Req: 'False'
+        Req: False
     gleason_patterns_percent:
         Desc: Numeric value that represents the percentage of Patterns 4 and 5, which
             is used when the Gleason score is greater than 7 to predict prognosis.
-        Req: 'False'
+        Req: False
         Type: integer
     goblet_cells_columnar_mucosa_present:
         Desc: The yes/no/unknown indicator used to describe whether goblet cells were
@@ -4132,31 +4104,31 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3440219
+        -   Code: '3440219'
             Origin: caDSR
             Value: goblet_cells_columnar_mucosa_present
     gradient_length:
         Desc: Time with units
-        Req: 'False'
+        Req: False
         Type: integer
     gradient_length_uom:
         Desc: Unit of Measure of gradient_length, minutes
-        Req: 'False'
+        Req: False
         Type: string
     gross_tumor_weight:
         Desc: TextNumeric value used to describe the gross pathologic tumor weight,
             measured in grams.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6133606
+        -   Code: '6133606'
             Origin: caDSR
             Value: gross_tumor_weight
         Type: integer
     growth_rate:
         Desc: Rate at which the model grows, measured as hours to time to split.
-        Req: 'False'
+        Req: False
         Type: integer
     haart_treatment_indicator:
         Desc: The text term used to indicate whether the patient received Highly Active
@@ -4166,7 +4138,7 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     hepatitis_sustained_virological_response:
         Desc: 'The yes/no/unknown indicator used to describe whether the patient received
             treatment for a risk factor the patient had at the time of or prior to
@@ -4178,15 +4150,15 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6423783
+        -   Code: '6423783'
             Origin: caDSR
             Value: hepatitis_sustained_virological_response
     hgnc_version:
         Desc: Name and version of HGNC database of human gene names used in the data
             analysis pipeline
-        Req: 'False'
+        Req: False
         Type: string
     history_of_tumor:
         Desc: Indicates whether patient has a history of tumors.
@@ -4194,24 +4166,24 @@ PropDefinitions:
         - true
         - false
         - Not Reported
-        Req: 'False'
+        Req: False
     history_of_tumor_type:
         Desc: Describes the type of the patient's prior diagnosed tumor.
         Enum:
         - Phenochromocytoma or Paraganglioma
-        Req: 'False'
+        Req: False
     hiv_positive:
         Desc: Text term to signify whether a physician has diagnosed HIV infection
             in a patient.
-        Req: 'False'
+        Req: False
         Type: string
     hiv_viral_load:
         Desc: Numeric value that represents the concentration of an analyte or aliquot
             extracted from the sample or sample portion, measured in milligrams per
             milliliter.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2649682
+        -   Code: '2649682'
             Origin: caDSR
             Value: hiv_viral_load
         Type: number
@@ -4222,7 +4194,7 @@ PropDefinitions:
         - Progestin and Estrogen
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     hormonal_contraceptive_use:
         Desc: The text term used to indicate whether the patient used hormonal contraceptives.
         Enum:
@@ -4231,7 +4203,7 @@ PropDefinitions:
         - Never Used
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     hormone_replacement_therapy_type:
         Desc: The specific type of hormone replacement therapy received by the patient.
         Enum:
@@ -4240,10 +4212,10 @@ PropDefinitions:
         - Progesterone only
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     hpv_status:
         Desc: The findings of the oncogenic HPV.
-        Req: 'False'
+        Req: False
         Type: string
     hysterectomy_margins_involved:
         Desc: The text term used to indicate whether the patient's disease was determined
@@ -4256,7 +4228,7 @@ PropDefinitions:
         - Vagina
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     hysterectomy_type:
         Desc: The text term used to describe the type of hysterectomy the patient
             had.
@@ -4267,13 +4239,13 @@ PropDefinitions:
         - Simple Hysterectomy
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     icd_10_code:
         Desc: Alphanumeric value used to describe the disease code from the tenth
             version of the International Classification of Disease (ICD-10).
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3226287
+        -   Code: '3226287'
             Origin: caDSR
             Value: icd_10_code
         Type: string
@@ -4289,7 +4261,7 @@ PropDefinitions:
         - Poor Prognosis
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     imaging_result:
         Desc: The text term used to describe the result of the imaging or scan performed
             on the patient.
@@ -4300,7 +4272,7 @@ PropDefinitions:
         - Not Performed
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     imaging_type:
         Desc: The text term used to describe the type of imaging or scan performed
             on the patient.
@@ -4309,7 +4281,7 @@ PropDefinitions:
         - CT Scan
         - MRI
         - PET
-        Req: 'False'
+        Req: False
     immunosuppressive_treatment_type:
         Desc: The text term used to describe the type of immunosuppresive treatment
             the patient received.
@@ -4322,7 +4294,7 @@ PropDefinitions:
         - Other
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     index_date:
         Desc: The text term used to describe the reference or anchor date used when
             for date obfuscation, where a single date is obscured by creating one
@@ -4335,16 +4307,14 @@ PropDefinitions:
         - Sample Procurement
         - Study Enrollment
         - Recurrence
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6154722
+        -   Code: '6154722'
             Origin: caDSR
             Value: index_date
     initial_disease_status:
-        Desc: 'The text term used to describe the status of the patient''s malignancy
+        Desc: The text term used to describe the status of the patient's malignancy
             when the treatment began.
-
-            '
         Enum:
         - Initial Diagnosis
         - Progressive Disease
@@ -4352,13 +4322,13 @@ PropDefinitions:
         - Residual Disease
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     initial_weight:
         Desc: Numeric value that represents the initial weight of the sample, measured
             in milligrams.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432605
+        -   Code: '5432605'
             Origin: caDSR
             Value: initial_weight
         Type: number
@@ -4372,9 +4342,9 @@ PropDefinitions:
         - Undifferentiated
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6133602
+        -   Code: '6133602'
             Origin: caDSR
             Value: inpc_grade
     inpc_histologic_group:
@@ -4388,9 +4358,9 @@ PropDefinitions:
         - Unfavorable
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4616372
+        -   Code: '4616372'
             Origin: caDSR
             Value: inpc_histologic_group
     inrg_stage:
@@ -4403,9 +4373,9 @@ PropDefinitions:
         - Ms
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5777238
+        -   Code: '5777238'
             Origin: caDSR
             Value: inrg_stage
     inss_stage:
@@ -4420,9 +4390,9 @@ PropDefinitions:
         - Stage 4S
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6133603
+        -   Code: '6133603'
             Origin: caDSR
             Value: inss_stage
     instrument_make:
@@ -4731,32 +4701,30 @@ PropDefinitions:
         Req: 'True'
     intermediate_dimension:
         Desc: Intermediate dimension of the sample, in millimeters.
-        Req: 'False'
+        Req: False
         Type: number
     internal_standards:
         Desc: Reference material used for standardization/QC
-        Req: 'False'
+        Req: False
         Type: string
     international_prognostic_index:
-        Desc: 'The text term used to describe the International Prognostic Index,
-            which classifies the prognosis of patients with aggressive non-Hodgkin''s
+        Desc: The text term used to describe the International Prognostic Index,
+            which classifies the prognosis of patients with aggressive non-Hodgkin's
             lymphoma.
-
-            '
         Enum:
         - Low Risk
         - Low-Intermediate Risk
         - High-Intermediate Risk
         - High Risk
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2500234
+        -   Code: '2500234'
             Origin: caDSR
             Value: international_prognostic_index
     ionization_mode:
         Desc: Method of ionization used in Mass Spec such as Electron Impact (EI)
             or Electrospray Ionization (ESI)
-        Req: 'False'
+        Req: False
         Type: string
     irs_group:
         Desc: Text term used to describe the classification of rhabdomyosarcoma tumors,
@@ -4775,9 +4743,9 @@ PropDefinitions:
         - Group IV
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6141658
+        -   Code: '6141658'
             Origin: caDSR
             Value: irs_group
     irs_stage:
@@ -4790,9 +4758,9 @@ PropDefinitions:
         - '4'
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5162089
+        -   Code: '5162089'
             Origin: caDSR
             Value: irs_stage
     ishak_fibrosis_score:
@@ -4806,9 +4774,9 @@ PropDefinitions:
         - 6 - Established Cirrhosis
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3182621
+        -   Code: '3182621'
             Origin: caDSR
             Value: ishak_fibrosis_score
     isobaric_labeling_reagent:
@@ -4835,9 +4803,9 @@ PropDefinitions:
         - III
         - Not Reported
         - Unknown
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2465385
+        -   Code: '2465385'
             Origin: caDSR
             Value: iss_stage
     itraq_113:
@@ -4891,14 +4859,14 @@ PropDefinitions:
         - '100'
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2003853
+        -   Code: '2003853'
             Origin: caDSR
             Value: karnofsky_performance_status
     label:
         Desc: Reagent used for isobaric labeling or label-free
-        Req: 'False'
+        Req: False
         Type: string
     label_free:
         Desc: The sample tagged with this isobaric label reagent
@@ -4946,9 +4914,9 @@ PropDefinitions:
         - Microscopic
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6690680
+        -   Code: '6690680'
             Origin: caDSR
             Value: largest_extrapelvic_peritoneal_focus
     last_known_disease_status:
@@ -4965,7 +4933,7 @@ PropDefinitions:
         - Not Allowed To Collect
         Req: 'True'
         Term:
-        -   Code: 5424231
+        -   Code: '5424231'
             Origin: caDSR
             Value: last_known_disease_status
     laterality:
@@ -4979,17 +4947,17 @@ PropDefinitions:
         - Unilateral
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 827
+        -   Code: '827'
             Origin: caDSR
             Value: laterality
     ldh_level_at_diagnosis:
         Desc: The 2 decimal place numeric laboratory value measured, assigned or computed
             related to the assessment of lactate dehydrogenase in a specimen.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2798766
+        -   Code: '2798766'
             Origin: caDSR
             Value: ldh_level_at_diagnosis
         Type: string
@@ -4997,9 +4965,9 @@ PropDefinitions:
         Desc: The top value of the range of statistical characteristics that are supposed
             to represent accepted standard, non-pathological pattern for lactate dehydrogenase
             (units not specified).
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 89
+        -   Code: '89'
             Origin: caDSR
             Value: ldh_normal_range_upper
         Type: string
@@ -5011,20 +4979,20 @@ PropDefinitions:
         Desc: Average log-ratio of sample reporter-ion to common reference of peptide
             ions associated with the gene in acquisitions from a specific biological
             sample.
-        Req: 'False'
+        Req: False
         Type: double
     log_ratio:
         Desc: Average log-ratio of sample reporter-ion to common reference of peptide
             ions associated with the gene in acquisitions from a specific biological
             sample.
-        Req: 'False'
+        Req: False
         Type: number
     longest_dimension:
         Desc: Numeric value that represents the longest dimension of the sample, measured
             in millimeters.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432602
+        -   Code: '5432602'
             Origin: caDSR
             Value: longest_dimension
         Type: number
@@ -5036,24 +5004,24 @@ PropDefinitions:
         - false
         - Unknown
         Term:
-        -   Code: 6161018
+        -   Code: '6161018'
             Origin: caDSR
             Value: lost_to_followup
     lymph_nodes_positive:
         Desc: The number of lymph nodes involved with disease as determined by pathologic
             examination.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 89
+        -   Code: '89'
             Origin: caDSR
             Value: lymph_nodes_positive
         Type: integer
     lymph_nodes_tested:
         Desc: The number of lymph nodes tested to determine whether lymph nodes were
             involved with disease as determined by a pathologic examination.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3
+        -   Code: '3'
             Origin: caDSR
             Value: lymph_nodes_tested
         Type: integer
@@ -5065,15 +5033,15 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 64171
+        -   Code: '64171'
             Origin: caDSR
             Value: lymphatic_invasion_present
     margin_distance:
         Desc: Numeric value that represents the distance between the tumor and the
             surgical margin
-        Req: 'False'
+        Req: False
         Type: number
     margins_involved_site:
         Desc: The text term used to describe the anatomic sites that were involved
@@ -5087,11 +5055,11 @@ PropDefinitions:
         - Renal Sinus
         - Renal Vein
         - Ureter
-        Req: 'False'
+        Req: False
     marijuana_use_per_week:
         Desc: Numeric value that represents the number of times the patient uses marijuana
             each day.
-        Req: 'False'
+        Req: False
         Type: number
     masaoka_stage:
         Desc: 'The text term used to describe the Masaoka staging system, a classification
@@ -5106,9 +5074,9 @@ PropDefinitions:
         - Stage III
         - Stage IVa
         - Stage IVb
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3952848
+        -   Code: '3952848'
             Origin: caDSR
             Value: masaoka_stage
     md5sum:
@@ -5126,24 +5094,22 @@ PropDefinitions:
         - WNT-Activated
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6002209
+        -   Code: '6002209'
             Origin: caDSR
             Value: medulloblastoma_molecular_classification
     menopause_status:
-        Desc: 'Text term used to describe the patient''s menopause status.
-
-            '
+        Desc: Text term used to describe the patient's menopause status.
         Enum:
         - Premenopausal
         - Perimenopausal
         - Postmenopausal
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2434914
+        -   Code: '2434914'
             Origin: caDSR
             Value: menopause_status
     metastasis_at_diagnosis:
@@ -5156,9 +5122,9 @@ PropDefinitions:
         - Regional Metastasis
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6133614
+        -   Code: '6133614'
             Origin: caDSR
             Value: metastasis_at_diagnosis
     metastasis_at_diagnosis_site:
@@ -5212,9 +5178,9 @@ PropDefinitions:
         - Bronchus
         - Vertebral Canal
         - Head, Face or Neck, NOS
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3029815
+        -   Code: '3029815'
             Origin: caDSR
             Value: metastasis_at_diagnosis_site
     method_of_diagnosis:
@@ -5249,9 +5215,9 @@ PropDefinitions:
         - Not Reported
         - Not Allowed To Collect
         - Exoresection
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6161031
+        -   Code: '6161031'
             Origin: caDSR
             Value: method_of_diagnosis
     method_of_sample_procurement:
@@ -5360,7 +5326,7 @@ PropDefinitions:
         - Total Laryngectomy
         - Partial Nephrectomy
         - Transurethral Resection (TURP)
-        Req: 'False'
+        Req: False
     micropapillary_features:
         Desc: The yes/no/unknown indicator used to describe whether micropapillary
             features were determined to be present.
@@ -5369,11 +5335,11 @@ PropDefinitions:
         - Present
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Tags:
             Deprecated: true
         Term:
-        -   Code: 6068784
+        -   Code: '6068784'
             Origin: caDSR
             Value: micropapillary_features
     mitosis_karyorrhexis_index:
@@ -5385,9 +5351,9 @@ PropDefinitions:
         - Low
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4616412
+        -   Code: '4616412'
             Origin: caDSR
             Value: mitosis_karyorrhexis_index
     mitotic_count:
@@ -5397,7 +5363,7 @@ PropDefinitions:
             power field (40X) or 10 high power fields.
 
             '
-        Req: 'False'
+        Req: False
         Tags:
             Deprecated: true
         Type: integer
@@ -6565,16 +6531,16 @@ PropDefinitions:
         - 8311/6
         Req: 'True'
         Term:
-        -   Code: 3226275
+        -   Code: '3226275'
             Origin: caDSR
             Value: morphology
     ms1_data_analysis:
         Desc: Name and version of the tool used for MS1 data analysis
-        Req: 'False'
+        Req: False
         Type: string
     ms1_resolution:
         Desc: MS1 resolution, typically at 400 m/z
-        Req: 'False'
+        Req: False
         Term:
         -   Code: MS:1000011
             Origin: PSI MS
@@ -6582,7 +6548,7 @@ PropDefinitions:
         Type: integer
     ms2_resolution:
         Desc: MS2 resolution, typically at 400 m/z
-        Req: 'False'
+        Req: False
         Term:
         -   Code: MS:1000011
             Origin: PSI MS
@@ -6590,16 +6556,16 @@ PropDefinitions:
         Type: integer
     mzidentml_refseq:
         Desc: Name and version of the NCBI Refseq database used in mzIdentML
-        Req: 'False'
+        Req: False
         Type: string
     mzidentml_uniprot:
         Desc: Name and version of the Uniprot Refseq database used in mzIdentiML
-        Req: 'False'
+        Req: False
         Type: string
     nadir_cd4_count:
         Desc: Numeric value that represents the lowest point to which the CD4 count
             has dropped (nadir).
-        Req: 'False'
+        Req: False
         Type: number
     ncbi_gene_id:
         Desc: NCBI Gene Identifier
@@ -6608,11 +6574,11 @@ PropDefinitions:
     new_event_anatomic_site:
         Desc: Text term to specify the anatomic location of the return of tumor after
             treatment.
-        Req: 'False'
+        Req: False
         Type: string
     new_event_type:
         Desc: Text term to identify a new tumor event.
-        Req: 'False'
+        Req: False
         Type: string
     non_nodal_regional_disease:
         Desc: 'The text term used to describe whether the patient had non-nodal regional
@@ -6625,7 +6591,7 @@ PropDefinitions:
         - Present
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     non_nodal_tumor_deposits:
         Desc: 'The yes/no/unknown indicator used to describe the presence of tumor
             deposits in the pericolic or perirectal fat or in adjacent mesentery away
@@ -6637,9 +6603,9 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3107051
+        -   Code: '3107051'
             Origin: caDSR
             Value: non_nodal_tumor_deposits
     normal_tumor_genotype_snp_match:
@@ -6651,14 +6617,14 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4588156
+        -   Code: '4588156'
             Origin: caDSR
             Value: normal_tumor_genotype_snp_match
     normalized_collision_energy:
         Desc: Normalized collisions energy (%)
-        Req: 'False'
+        Req: False
         Term:
         -   Code: MS:1000138
             Origin: PSI MS
@@ -6667,26 +6633,26 @@ PropDefinitions:
     number_of_cycles:
         Desc: The numeric value used to describe the number of cycles of a specific
             treatment or regimen the patient received.
-        Req: 'False'
+        Req: False
         Type: integer
     occupation_duration_years:
         Desc: 'The number of years a patient worked in a specific occupation.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2435424
+        -   Code: '2435424'
             Origin: caDSR
             Value: occupation_duration_years
         Type: integer
     oct_embedded:
         Desc: Indicator of whether or not the sample was embedded in Optimal Cutting
             Temperature (OCT) compound.
-        Req: 'False'
+        Req: False
         Tags:
             Deprecated: true
         Term:
-        -   Code: 5432538
+        -   Code: '5432538'
             Origin: caDSR
             Value: oct_embedded
         Type: string
@@ -6709,9 +6675,9 @@ PropDefinitions:
         - Ovarian Capsule Fragmented
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6690671
+        -   Code: '6690671'
             Origin: caDSR
             Value: ovarian_specimen_status
     ovarian_surface_involvement:
@@ -6725,15 +6691,15 @@ PropDefinitions:
         - Indeterminate
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6690674
+        -   Code: '6690674'
             Origin: caDSR
             Value: ovarian_surface_involvement
     overall_survival:
         Desc: Number of days between the date used for index and the patient's date
             of death or the date the patient was last known to be alive.
-        Req: 'False'
+        Req: False
         Type: string
     pack_years_smoked:
         Desc: 'Numeric computed value to represent lifetime tobacco exposure defined
@@ -6741,9 +6707,9 @@ PropDefinitions:
             by 20.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2955385
+        -   Code: '2955385'
             Origin: caDSR
             Value: pack_years_smoked
         Type: number
@@ -6752,9 +6718,9 @@ PropDefinitions:
             with clinical chronic pancreatitis.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3457763
+        -   Code: '3457763'
             Origin: caDSR
             Value: pancreatitis_onset_year
         Type: integer
@@ -6764,33 +6730,33 @@ PropDefinitions:
         - true
         - false
         - Not Reported
-        Req: 'False'
+        Req: False
     particle_size:
         Desc: Approximate size with units
-        Req: 'False'
+        Req: False
         Type: number
     particle_size_uom:
         Desc: Unit of Measure of particle_size
-        Req: 'False'
+        Req: False
         Type: string
     particle_type:
         Desc: Manufacturer or brand name of particle if applicable
-        Req: 'False'
+        Req: False
         Type: string
     passage_count:
         Desc: Number of passages (splits) between the original tissue and this model.
-        Req: 'False'
+        Req: False
         Type: integer
     pathology_report_uuid:
         Desc: UUID of the related pathology report.
-        Req: 'False'
+        Req: False
         Type: string
     percent_tumor_invasion:
         Desc: 'The percentage of tumor cells spread locally in a malignant neoplasm
             through infiltration or destruction of adjacent tissue.
 
             '
-        Req: 'False'
+        Req: False
         Type: integer
     perineural_invasion_present:
         Desc: A yes/no indicator to ask if perineural invasion or infiltration of
@@ -6800,9 +6766,9 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 64181
+        -   Code: '64181'
             Origin: caDSR
             Value: perineural_invasion_present
     peripancreatic_lymph_nodes_positive:
@@ -6814,17 +6780,17 @@ PropDefinitions:
         - 4 or More
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5983082
+        -   Code: '5983082'
             Origin: caDSR
             Value: peripancreatic_lymph_nodes_positive
     peripancreatic_lymph_nodes_tested:
         Desc: The total number of peripancreatic lymph nodes tested for the presence
             of pancreatic cancer cells.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6050944
+        -   Code: '6050944'
             Origin: caDSR
             Value: peripancreatic_lymph_nodes_tested
         Type: integer
@@ -6840,14 +6806,14 @@ PropDefinitions:
         - Unsatisfactory
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6690681
+        -   Code: '6690681'
             Origin: caDSR
             Value: peritoneal_fluid_cytological_status
     phosphosite_localization:
         Desc: Name and version of the tool used for phosphosite localization
-        Req: 'False'
+        Req: False
         Type: string
     plex_name:
         Desc: For label-free workflows, the plex name is the aliquot (biological sample)
@@ -6856,7 +6822,7 @@ PropDefinitions:
             (sample) identifier, separated by colons, in reporter ion order. Biological
             replicates, if any, are indicated by a trailing .1, .2, etc. on the aliquot
             identifier.
-        Req: 'False'
+        Req: False
         Type: number
     plex_or_folder_name:
         Desc: Name used to group the files generated in single experimental run. This
@@ -6870,44 +6836,44 @@ PropDefinitions:
         Enum:
         - 'true'
         - 'false'
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4170557
+        -   Code: '4170557'
             Origin: caDSR
             Value: is_ffpe
     portion.portion_id:
-        Req: 'False'
+        Req: False
         Type: string
     portion.portion_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     portion.project_id:
-        Req: 'False'
+        Req: False
         Type: string
     portion.project_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     portion.sample_id:
-        Req: 'False'
+        Req: False
         Type: string
     portion.sample_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     portion.weight:
         Desc: Numeric value that represents the sample portion weight, measured in
             milligrams.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 651
+        -   Code: '651'
             Origin: caDSR
             Value: weight
         Type: number
     portion_number:
         Desc: Numeric value that represents the sequential number assigned to a portion
             of the sample.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432711
+        -   Code: '5432711'
             Origin: caDSR
             Value: portion_number
         Type: integer
@@ -6921,7 +6887,7 @@ PropDefinitions:
         - Stillbirth
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     pregnant_at_diagnosis:
         Desc: The text term used to indicate whether the patient was pregnant at the
             time they were diagnosed.
@@ -6930,7 +6896,7 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     premature_at_birth:
         Desc: The yes/no/unknown indicator used to describe whether the patient was
             premature (less than 37 weeks gestation) at birth.
@@ -6939,9 +6905,9 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6010765
+        -   Code: '6010765'
             Origin: caDSR
             Value: premature_at_birth
     preservation_method:
@@ -6956,9 +6922,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432521
+        -   Code: '5432521'
             Origin: caDSR
             Value: preservation_method
     primary_diagnosis:
@@ -9607,27 +9573,25 @@ PropDefinitions:
         - Yolk sac tumor
         Req: 'True'
         Term:
-        -   Code: 6161032
+        -   Code: '6161032'
             Origin: caDSR
             Value: primary_diagnosis
     primary_gleason_grade:
-        Desc: 'The text term used to describe the primary Gleason score, which describes
+        Desc: The text term used to describe the primary Gleason score, which describes
             the pattern of cells making up the largest area of the tumor. The primary
-            and secondary Gleason pattern grades are combined to determine the patient''s
+            and secondary Gleason pattern grades are combined to determine the patient's
             Gleason grade group, which is used to determine the aggresiveness of prostate
             cancer. Note that this grade describes the entire prostatectomy specimen
             and is not specific to the sample used for sequencing.
-
-            '
         Enum:
         - Pattern 1
         - Pattern 2
         - Pattern 3
         - Pattern 4
         - Pattern 5
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5936800
+        -   Code: '5936800'
             Origin: caDSR
             Value: primary_gleason_grade
     primary_site:
@@ -9726,7 +9690,7 @@ PropDefinitions:
         - Lymph nodes
         Req: 'True'
         Term:
-        -   Code: 6161019
+        -   Code: '6161019'
             Origin: caDSR
             Value: primary_site
     prior_malignancy:
@@ -9738,9 +9702,9 @@ PropDefinitions:
         - unknown
         - not reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3382736
+        -   Code: '3382736'
             Origin: caDSR
             Value: prior_malignancy
     prior_treatment:
@@ -9752,9 +9716,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4231463
+        -   Code: '4231463'
             Origin: caDSR
             Value: prior_treatment
     procedures_performed:
@@ -9764,22 +9728,22 @@ PropDefinitions:
         - Endoscopy
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     program:
         Desc: 'Indicates that the project is logically part of the indicated program.
 
             '
-        Req: 'False'
+        Req: False
         Type: string
     program.name:
         Desc: Name of the program
         Req: 'True'
         Type: string
     program.program_id:
-        Req: 'False'
+        Req: False
         Type: string
     program.program_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     program_manager:
         Desc: Name of the program manager from the sponsoring agency
@@ -9792,11 +9756,11 @@ PropDefinitions:
     progression_free_survival:
         Desc: Number of days between the date used for index and the first date the
             patient is known to be free of disease progression.
-        Req: 'False'
+        Req: False
         Type: string
     progression_free_survival_event:
-        Desc: The event used to define the patient''s disease progression.
-        Req: 'False'
+        Desc: The event used to define the patient's disease progression.
+        Req: False
         Type: string
     progression_or_recurrence_anatomic_site:
         Desc: 'The text term used to describe the anatomic site of the progressive
@@ -10136,9 +10100,9 @@ PropDefinitions:
         - Overlapping lesion of biliary tract
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6161026
+        -   Code: '6161026'
             Origin: caDSR
             Value: progression_or_recurrence_anatomic_site
     progression_or_recurrence_type:
@@ -10153,14 +10117,14 @@ PropDefinitions:
         - Regional
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6142385
+        -   Code: '6142385'
             Origin: caDSR
             Value: progression_or_recurrence_type
     project.description:
         Desc: Project description
-        Req: 'False'
+        Req: False
         Type: string
     project.name:
         Desc: Display name for the project
@@ -10177,12 +10141,12 @@ PropDefinitions:
     protein_abundance.precursor_area:
         Desc: Total precursor area of peptide ions associated with the gene in acquisitions
             from a specific biological sample.
-        Req: 'False'
+        Req: False
         Type: number
     protein_abundance.unshared_precursor_area:
         Desc: Total precursor area of peptide ions of unshared peptides only associated
             with the gene in acquisitions from a specific biological sample.
-        Req: 'False'
+        Req: False
         Type: number
     proteins:
         Desc: Semi-colon separated list of protein accessions associated with the
@@ -10191,7 +10155,7 @@ PropDefinitions:
         Type: string
     protocol:
         Desc: Name of the protocol used to run the experiment
-        Req: 'False'
+        Req: False
         Type: string
     protocol.acquisition_type:
         Desc: Mass spectrometry acquisition method
@@ -10223,22 +10187,22 @@ PropDefinitions:
         Type: string
     protocol_date:
         Desc: Date protocol was created or updated
-        Req: 'False'
+        Req: False
         Type: date
     protocol_name:
         Desc: External analytical sample protocol name
-        Req: 'False'
+        Req: False
         Type: string
     psm_report_generation:
         Desc: Name and version of the tool used to peptide spectral match report generation
-        Req: 'False'
+        Req: False
         Type: string
     publication_id:
-        Req: 'False'
+        Req: False
         Type: string
     pubmed_id:
         Desc: Identifier of the article in Pubmed system
-        Req: 'False'
+        Req: False
         Type: string
     quantitation_strategy:
         Desc: General strategy used for differential analysis
@@ -10278,7 +10242,7 @@ PropDefinitions:
         - Unknown
         Req: 'True'
         Term:
-        -   Code: 2192199
+        -   Code: '2192199'
             Origin: caDSR
             Value: race
     radon_exposure:
@@ -10291,19 +10255,19 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2816352
+        -   Code: '2816352'
             Origin: caDSR
             Value: radon_exposure
     raw_data_conversion:
         Desc: Name and version of the tool used to convert the proprietary data into
             open format
-        Req: 'False'
+        Req: False
         Type: string
     raw_data_processing:
         Desc: Name and version of the tool used to process the proprietary raw data
-        Req: 'False'
+        Req: False
         Type: string
     reason_treatment_ended:
         Desc: The text term used to describe the reason a specific treatment or regimen
@@ -10315,30 +10279,30 @@ PropDefinitions:
         - Disease Progression
         - Other
         - Withdrawal by Subject
-        Req: 'False'
+        Req: False
     recist_targeted_regions_number:
         Desc: Numeric value that represents the number of baseline target lesions,
             as described by the Response Evaluation Criteria in Solid Tumours (RECIST)
             criteria.
-        Req: 'False'
+        Req: False
         Type: integer
     recist_targeted_regions_sum:
         Desc: Numeric value that represents the sum of baseline target lesions, as
             described by the Response Evaluation Criteria in Solid Tumours (RECIST)
             criteria.
-        Req: 'False'
+        Req: False
         Type: number
     reconstitution_solvent:
         Desc: Solvent used to reconstitute samples after evaporation
-        Req: 'False'
+        Req: False
         Type: string
     reconstitution_solvent_volume:
         Desc: Volume of the reconstitution solvent used
-        Req: 'False'
+        Req: False
         Type: number
     reconstitution_volume_uom:
         Desc: Unit of measure of the reconstitution_solvent_volume
-        Req: 'False'
+        Req: False
         Type: string
     reflux_treatment_type:
         Desc: 'Text term used to describe the types of treatment used to manage gastroesophageal
@@ -10355,57 +10319,51 @@ PropDefinitions:
         - Proton Pump Inhibitors
         - Surgically Treated
         - Unknown
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3440206
+        -   Code: '3440206'
             Origin: caDSR
             Value: reflux_treatment_type
     refseq_database_version:
         Desc: Name and version of the NCBI Refseq database used in the data analysis
             pipeline
-        Req: 'False'
+        Req: False
         Type: string
     regimen_or_line_of_therapy:
         Desc: 'The text term used to describe the regimen or line of therapy.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6161024
+        -   Code: '6161024'
             Origin: caDSR
             Value: regimen_or_line_of_therapy
         Type: string
     relationship_age_at_diagnosis:
-        Desc: 'The age (in years) when the patient''s relative was first diagnosed.
-
-            '
-        Req: 'False'
+        Desc: The age (in years) when the patient's relative was first diagnosed.
+        Req: False
         Term:
-        -   Code: 5300571
+        -   Code: '5300571'
             Origin: caDSR
             Value: relationship_age_at_diagnosis
         Type: number
     relationship_gender:
-        Desc: 'The text term used to describe the gender of the patient''s relative
+        Desc: The text term used to describe the gender of the patient's relative
             with a history of cancer.
-
-            '
         Enum:
         - female
         - male
         - unknown
         - unspecified
         - not reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6161021
+        -   Code: '6161021'
             Origin: caDSR
             Value: relationship_gender
     relationship_primary_diagnosis:
-        Desc: 'The text term used to describe the malignant diagnosis of the patient''s
+        Desc: The text term used to describe the malignant diagnosis of the patient's
             relative with a history of cancer.
-
-            '
         Enum:
         - Adrenal Gland Cancer
         - Basal Cell Cancer
@@ -10459,9 +10417,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Pediatric Liver Cancer
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6161022
+        -   Code: '6161022'
             Origin: caDSR
             Value: relationship_primary_diagnosis
     relationship_type:
@@ -10590,31 +10548,29 @@ PropDefinitions:
         - Adopted Sister
         - Female Sibling of Adopted Child
         - Male Sibling of Adopted Child
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2690165
+        -   Code: '2690165'
             Origin: caDSR
             Value: relationship_type
     relative_with_cancer_history:
-        Desc: 'The yes/no/unknown indicator used to describe whether any of the patient''s
+        Desc: The yes/no/unknown indicator used to describe whether any of the patient's
             relatives have a history of cancer.
-
-            '
         Enum:
         - true
         - false
         - unknown
         - not reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6161023
+        -   Code: '6161023'
             Origin: caDSR
             Value: relative_with_cancer_history
     relatives_with_cancer_history_count:
         Desc: 'The number of relatives the patient has with a known history of cancer.
 
             '
-        Req: 'False'
+        Req: False
         Type: integer
     reporter_ion_ms_level:
         Desc: MS level at which fragmentation spectra should be analyzed for reporter
@@ -10633,9 +10589,9 @@ PropDefinitions:
         - RX
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2608702
+        -   Code: '2608702'
             Origin: caDSR
             Value: residual_disease
     respirable_crystalline_silica_exposure:
@@ -10649,11 +10605,11 @@ PropDefinitions:
         - true
         - false
         - Unknown
-        Req: 'False'
+        Req: False
     ribosomal_rna_28s_16s_ratio:
         Desc: The 28S/18S ribosomal RNA band ratio used to assess the quality of total
             RNA.
-        Req: 'False'
+        Req: False
         Type: number
     risk_factor:
         Desc: 'The text term used to describe a risk factor the patient had at the
@@ -10811,9 +10767,9 @@ PropDefinitions:
         - Sialadenitis
         - Tuberous Sclerosis
         - Succinate Dehydrogenase-Deficient Renal Cell Carcinoma
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6142389
+        -   Code: '6142389'
             Origin: caDSR
             Value: risk_factor
     risk_factor_treatment:
@@ -10827,16 +10783,16 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6514356
+        -   Code: '6514356'
             Origin: caDSR
             Value: risk_factor_treatment
     rna_integrity_number:
         Desc: A numerical assessment of the integrity of RNA based on the entire electrophoretic
             trace of the RNA sample, including the presence or absence of degradation
             products.
-        Req: 'False'
+        Req: False
         Type: number
     route_of_administration:
         Desc: The pathway by which a substance is administered in order to reach the
@@ -10846,16 +10802,16 @@ PropDefinitions:
         - Intravenous
         - Oral
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
         -   Code: C38114
             Origin: NCIt
             Value: route_of_administration
     sample.case_id:
-        Req: 'False'
+        Req: False
         Type: string
     sample.case_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     sample.is_ffpe:
         Desc: Indicator to signify whether or not the tissue sample was fixed in formalin
@@ -10863,11 +10819,11 @@ PropDefinitions:
         Enum:
         - 'true'
         - 'false'
-        Req: 'False'
+        Req: False
         Tags:
             Deprecated: true
         Term:
-        -   Code: 4170557
+        -   Code: '4170557'
             Origin: caDSR
             Value: is_ffpe
     sample.pool:
@@ -10879,13 +10835,13 @@ PropDefinitions:
         - false
         Req: 'True'
     sample.project_id:
-        Req: 'False'
+        Req: False
         Type: string
     sample.project_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     sample.sample_id:
-        Req: 'False'
+        Req: False
         Type: string
     sample.sample_submitter_id:
         Req: 'True'
@@ -10900,10 +10856,10 @@ PropDefinitions:
         Enum:
         - true
         - false
-        Req: 'False'
+        Req: False
     sample_ordinal:
         Desc: A number describing the samples place in an ordered sequence.
-        Req: 'False'
+        Req: False
         Type: integer
     sample_type:
         Desc: Text term to describe the source of a biospecimen used for a laboratory
@@ -10966,7 +10922,7 @@ PropDefinitions:
         - Serum
         Req: 'True'
         Term:
-        -   Code: 3111302
+        -   Code: '3111302'
             Origin: caDSR
             Value: sample_type
     sample_type_id:
@@ -11004,7 +10960,7 @@ PropDefinitions:
         - '86'
         - '99'
         - '87'
-        Req: 'False'
+        Req: False
     satellite_nodule_present:
         Desc: Indicator noting whether a nodule or tumor is located within a small
             distance (e.g. 2cm) of the primary tumor.
@@ -11014,7 +10970,7 @@ PropDefinitions:
         - Present
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     scan_tracer_used:
         Desc: The text term used to describe the type of tracer used during the imaging
             or scan of the patient.
@@ -11024,29 +10980,27 @@ PropDefinitions:
         - Choline
         - PSMA
         - Sodium Fluoride
-        Req: 'False'
+        Req: False
     search_database_parameters:
         Desc: Parameters used in the peptide identification database search
-        Req: 'False'
+        Req: False
         Type: string
     secondary_gleason_grade:
-        Desc: 'The text term used to describe the secondary Gleason score, which describes
+        Desc: The text term used to describe the secondary Gleason score, which describes
             the pattern of cells making up the second largest area of the tumor. The
             primary and secondary Gleason pattern grades are combined to determine
-            the patient''s Gleason grade group, which is used to determine the aggresiveness
+            the patient's Gleason grade group, which is used to determine the aggresiveness
             of prostate cancer. Note that this grade describes the entire prostatectomy
             specimen and is not specific to the sample used for sequencing.
-
-            '
         Enum:
         - Pattern 1
         - Pattern 2
         - Pattern 3
         - Pattern 4
         - Pattern 5
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5936802
+        -   Code: '5936802'
             Origin: caDSR
             Value: secondary_gleason_grade
     secondhand_smoke_as_child:
@@ -11057,15 +11011,15 @@ PropDefinitions:
         - false
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6841888
+        -   Code: '6841888'
             Origin: caDSR
             Value: secondhand_smoke_as_child
     sequence_database_search:
         Desc: Name and version of the tool used in peptide identification by scoring
             MS/MS spectra against peptides derived from a protein sequence database
-        Req: 'False'
+        Req: False
         Type: string
     serial_number:
         Desc: A serial number is a unique identifier, usually assigned by the manufacturer,
@@ -11080,14 +11034,14 @@ PropDefinitions:
         Desc: A 160-bit (20-byte) hash value derived from a file for the purpose of
             detecting errors which may have been introduced during its transmission
             or storage.
-        Req: 'False'
+        Req: False
         Type: string
     shortest_dimension:
         Desc: Numeric value that represents the shortest dimension of the sample,
             measured in millimeters.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432603
+        -   Code: '5432603'
             Origin: caDSR
             Value: shortest_dimension
         Type: number
@@ -11431,17 +11385,17 @@ PropDefinitions:
         - Pancreatic neck
         Req: 'True'
         Term:
-        -   Code: 6161034
+        -   Code: '6161034'
             Origin: caDSR
             Value: site_of_resection_or_biopsy
     sites_of_involvement:
         Desc: The anatomic sites of disease involvement in addition to the primary
             anatomic site.
-        Req: 'False'
+        Req: False
         Type: string
     smokeless_tobacco_quit_age:
         Desc: The age the subject quit smoking tobacco.
-        Req: 'False'
+        Req: False
         Type: integer
     smoking_frequency:
         Desc: 'The text term used to generally decribe how often the patient smokes.
@@ -11451,24 +11405,24 @@ PropDefinitions:
         - Every day
         - Some days
         - Unknown
-        Req: 'False'
+        Req: False
     spectral_count:
         Desc: Number of spectra matched to peptides associated with the gene in acquisitions
             from a specific analytical sample
-        Req: 'False'
+        Req: False
         Type: number
     spectrophotometer_method:
         Desc: Name of the method used to determine the concentration of purified nucleic
             acid within a solution.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3008378
+        -   Code: '3008378'
             Origin: caDSR
             Value: spectrophotometer_method
         Type: string
     sponsor:
         Desc: Funding agency
-        Req: 'False'
+        Req: False
         Type: string
     start_date:
         Desc: Start date of the program
@@ -11476,14 +11430,14 @@ PropDefinitions:
         Type: date
     starting_amount:
         Desc: Mass with units
-        Req: 'False'
+        Req: False
         Type: number
     starting_amount_uom:
         Desc: Unit of Measure of starting_amount
         Enum:
         - "\xC2\xB5g"
         - mg
-        Req: 'False'
+        Req: False
     study.acquisition_type:
         Desc: 'The modes of acquisition used in the LC-MS/MS experiments: data dependent
             acquisition (DDA), data independent acquisition (DIA).'
@@ -11491,27 +11445,27 @@ PropDefinitions:
         Type: string
     study.analytical_fraction:
         Desc: Type of peptide or protein enrichment
-        Req: 'False'
+        Req: False
         Type: string
     study.experiment_type:
         Desc: General strategy used for differential analysis
-        Req: 'False'
+        Req: False
         Type: string
     study.project_id:
-        Req: 'False'
+        Req: False
         Type: string
     study.project_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     study.study_id:
-        Req: 'False'
+        Req: False
         Type: string
     study.study_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     study.submitter_id_name:
         Desc: Name of the study as described by the data submitter
-        Req: 'False'
+        Req: False
         Type: string
     study_description:
         Desc: 'Describes the objective of the study, data collection, or compilation,
@@ -11520,27 +11474,27 @@ PropDefinitions:
         Type: string
     study_run_metadata.analyte:
         Desc: Type of peptide or protein enrichment
-        Req: 'False'
+        Req: False
         Type: string
     study_run_metadata.condition:
         Desc: 'Biological condition (ex: disease state) of the cases(patients) from
             which the aliquots derived.'
-        Req: 'False'
+        Req: False
         Type: string
     study_run_metadata.date:
         Desc: Date of the data acquired from the mass spectrometry instrument
-        Req: 'False'
+        Req: False
         Type: date
     study_run_metadata.experiment_number:
         Desc: Number associated with a specific run of the experiment
-        Req: 'False'
+        Req: False
         Type: integer
     study_run_metadata.experiment_type:
         Desc: General strategy used for differential analysis
         Req: 'True'
         Type: string
     study_run_metadata.folder_name:
-        Req: 'False'
+        Req: False
         Type: string
     study_run_metadata.fraction:
         Desc: Number of fractions in the experimental run
@@ -11548,7 +11502,7 @@ PropDefinitions:
         Type: string
     study_run_metadata.operator:
         Desc: Mass Spectrometry instrument operator
-        Req: 'False'
+        Req: False
         Type: string
     study_run_metadata.polarity:
         Desc: Ion polarity for the experimental run
@@ -11557,36 +11511,36 @@ PropDefinitions:
         - negative
         Req: False (Required for metabolomics only)
     study_run_metadata.protocol_id:
-        Req: 'False'
+        Req: False
         Type: string
     study_run_metadata.protocol_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     study_run_metadata.replicate_number:
         Desc: Replicate number, if applicable
-        Req: 'False'
+        Req: False
         Type: integer
     study_run_metadata.study_id:
-        Req: 'False'
+        Req: False
         Type: string
     study_run_metadata.study_run_metadata_id:
-        Req: 'False'
+        Req: False
         Type: string
     study_run_metadata.study_run_metadata_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     study_run_metadata.study_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     study_short_name:
         Desc: A short name for the study
-        Req: 'False'
+        Req: False
         Type: string
     study_shortname:
-        Req: 'False'
+        Req: False
         Type: string
     study_submitter_name:
-        Req: 'False'
+        Req: False
         Type: string
     supratentorial_localization:
         Desc: Text term to specify the location of the supratentorial tumor.
@@ -11601,9 +11555,9 @@ PropDefinitions:
         - Frontal lobe
         - Parietal lobe
         - Temporal lobe
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3133891
+        -   Code: '3133891'
             Origin: caDSR
             Value: supratentorial_localization
     synchronous_malignancy:
@@ -11617,9 +11571,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6142390
+        -   Code: '6142390'
             Origin: caDSR
             Value: synchronous_malignancy
     taxon:
@@ -16181,26 +16135,26 @@ PropDefinitions:
         - Zuclomiphene Citrate
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2975232
+        -   Code: '2975232'
             Origin: caDSR
             Value: therapeutic_agents
     time_between_clamping_and_freezing:
         Desc: Numeric representation of the elapsed time between the surgical clamping
             of blood supply and freezing of the sample, measured in minutes.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432611
+        -   Code: '5432611'
             Origin: caDSR
             Value: time_between_clamping_and_freezing
         Type: number
     time_between_excision_and_freezing:
         Desc: Numeric representation of the elapsed time between the excision and
             freezing of the sample, measured in minutes.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432612
+        -   Code: '5432612'
             Origin: caDSR
             Value: time_between_excision_and_freezing
         Type: number
@@ -16216,9 +16170,9 @@ PropDefinitions:
         - 31-60 Minutes
         - After 60 Minutes
         - Unknown
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3279220
+        -   Code: '3279220'
             Origin: caDSR
             Value: time_between_waking_and_first_smoke
     tissue_collection_type:
@@ -16227,7 +16181,7 @@ PropDefinitions:
         Enum:
         - Prospective
         - Retrospective
-        Req: 'False'
+        Req: False
     tissue_or_organ_of_origin:
         Desc: The text term used to describe the anatomic site of origin, of the patient's
             malignant disease, as described by the World Health Organization's (WHO)
@@ -16568,7 +16522,7 @@ PropDefinitions:
         - Laryngeal commissure
         Req: 'True'
         Term:
-        -   Code: 6161035
+        -   Code: '6161035'
             Origin: caDSR
             Value: tissue_or_organ_of_origin
     tissue_type:
@@ -16584,12 +16538,12 @@ PropDefinitions:
         - Not Allowed To Collect
         Req: 'True'
         Term:
-        -   Code: 5432687
+        -   Code: '5432687'
             Origin: caDSR
             Value: tissue_type
     title:
         Desc: Title of the research article
-        Req: 'False'
+        Req: False
         Type: string
     tmt_126:
         Desc: The sample tagged with this isobaric label reagent
@@ -16667,9 +16621,9 @@ PropDefinitions:
         Desc: 'The year in which the participant began smoking.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2228604
+        -   Code: '2228604'
             Origin: caDSR
             Value: tobacco_smoking_onset_year
         Type: integer
@@ -16677,9 +16631,9 @@ PropDefinitions:
         Desc: 'The year in which the participant quit smoking.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2228610
+        -   Code: '2228610'
             Origin: caDSR
             Value: tobacco_smoking_quit_year
         Type: integer
@@ -16699,15 +16653,15 @@ PropDefinitions:
         - Not Reported
         - Not Allowed To Collect
         - '6'
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2181650
+        -   Code: '2181650'
             Origin: caDSR
             Value: tobacco_smoking_status
     tobacco_use_per_day:
         Desc: Numeric value that represents the number of times the patient uses tobacco
             each day.
-        Req: 'False'
+        Req: False
         Type: number
     treatment_anatomic_site:
         Desc: 'The anatomic site or field targeted by a treatment regimen or single
@@ -17016,9 +16970,9 @@ PropDefinitions:
         - White Blood Cells
         - Wrist
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5615611
+        -   Code: '5615611'
             Origin: caDSR
             Value: treatment_anatomic_site
     treatment_arm:
@@ -17029,17 +16983,17 @@ PropDefinitions:
         - A081801
         - E4512
         - EA5142
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 7068995
+        -   Code: '7068995'
             Origin: caDSR
             Value: treatment_arm
     treatment_dose:
         Desc: The numeric value used to describe the dose of an agent the patient
             received.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2182728
+        -   Code: '2182728'
             Origin: caDSR
             Value: treatment_dose
         Type: integer
@@ -17050,7 +17004,7 @@ PropDefinitions:
         - cGy
         - Gy
         - mg
-        Req: 'False'
+        Req: False
     treatment_effect:
         Desc: 'The text term used to describe the pathologic effect a treatment(s)
             had on the tumor.
@@ -17063,9 +17017,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - No Known Treatment Effect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6514354
+        -   Code: '6514354'
             Origin: caDSR
             Value: treatment_effect
     treatment_effect_indicator:
@@ -17076,7 +17030,7 @@ PropDefinitions:
         - false
         - Not Reported
         - Unknown
-        Req: 'False'
+        Req: False
     treatment_frequency:
         Desc: The text term used to describe the frequency the patient received an
             agent or regimen.
@@ -17092,7 +17046,7 @@ PropDefinitions:
         - Once Weekly
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     treatment_intent_type:
         Desc: 'Text term to identify the reason for the administration of a treatment
             regimen. [Manually-curated]
@@ -17109,9 +17063,9 @@ PropDefinitions:
         - Not Reported
         - Androgen Deprivation Therapy (ADT)
         - Maintenance Therapy
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2793511
+        -   Code: '2793511'
             Origin: caDSR
             Value: treatment_intent_type
     treatment_or_therapy:
@@ -17124,16 +17078,14 @@ PropDefinitions:
         - false
         - unknown
         - not reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4231463
+        -   Code: '4231463'
             Origin: caDSR
             Value: treatment_or_therapy
     treatment_outcome:
-        Desc: 'Text term that describes the patient''s final outcome after the treatment
+        Desc: Text term that describes the patient's final outcome after the treatment
             was administered.
-
-            '
         Enum:
         - Complete Response
         - Mixed Response
@@ -17148,9 +17100,9 @@ PropDefinitions:
         - Very Good Partial Response
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5102383
+        -   Code: '5102383'
             Origin: caDSR
             Value: treatment_outcome
     treatment_type:
@@ -17224,14 +17176,14 @@ PropDefinitions:
         - Radiation, Photon Beam
         - Pleurodesis, Talc
         - Radiation, Mixed Photon Beam
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5102381
+        -   Code: '5102381'
             Origin: caDSR
             Value: treatment_type
     tumor_cell_content:
         Desc: Tumor Cell Content
-        Req: 'False'
+        Req: False
         Type: string
     tumor_code:
         Desc: Diagnostic tumor code of the tissue sample source.
@@ -17261,7 +17213,7 @@ PropDefinitions:
         - NHL, Burkitt lymphoma (BL)
         - Rhabdomyosarcoma
         - Soft tissue sarcoma, non-rhabdomyosarcoma
-        Req: 'False'
+        Req: False
     tumor_code_id:
         Desc: BCR-defined id code for the tumor sample.
         Enum:
@@ -17290,7 +17242,7 @@ PropDefinitions:
         - '71'
         - '80'
         - '81'
-        Req: 'False'
+        Req: False
     tumor_confined_to_organ_of_origin:
         Desc: The yes/no/unknown indicator used to describe whether the tumor is confined
             to the organ where it originated and did not spread to a proximal or distant
@@ -17301,15 +17253,15 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4925494
+        -   Code: '4925494'
             Origin: caDSR
             Value: tumor_confined_to_organ_of_origin
     tumor_depth:
         Desc: Numeric value that represents the depth of  tumor invasion, measured
             in millimeters (mm).
-        Req: 'False'
+        Req: False
         Type: number
     tumor_descriptor:
         Desc: Text that describes the kind of disease present in the tumor specimen
@@ -17325,9 +17277,9 @@ PropDefinitions:
         - Not Reported
         - Not Allowed To Collect
         - Premalignant
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3288124
+        -   Code: '3288124'
             Origin: caDSR
             Value: tumor_descriptor
     tumor_focality:
@@ -17338,9 +17290,9 @@ PropDefinitions:
         - Unifocal
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3174022
+        -   Code: '3174022'
             Origin: caDSR
             Value: tumor_focality
     tumor_grade:
@@ -17360,15 +17312,15 @@ PropDefinitions:
         - Not Reported
         Req: 'True'
         Term:
-        -   Code: 2785839
+        -   Code: '2785839'
             Origin: caDSR
             Value: tumor_grade
     tumor_largest_dimension_diameter:
         Desc: Numeric value used to describe the maximum diameter or dimension of
             the primary tumor, measured in centimeters.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 64215
+        -   Code: '64215'
             Origin: caDSR
             Value: tumor_largest_dimension_diameter
         Type: double
@@ -17383,9 +17335,9 @@ PropDefinitions:
         - '3'
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 6471217
+        -   Code: '6471217'
             Origin: caDSR
             Value: tumor_regression_grade
     tumor_stage:
@@ -17400,13 +17352,10 @@ PropDefinitions:
         -   Code: C16899
             Origin: NCIt
             Value: tumor_stage
-        Type: 'string<br><br><div style=''text-indent: 0px;padding-left: 25px;''>note:
-            if this information is not available, enter ''not reported''</div>'
+        Type: 'string'
     type_of_smoke_exposure:
-        Desc: 'The text term used to describe the patient''s specific type of smoke
+        Desc: The text term used to describe the patient's specific type of smoke
             exposure.
-
-            '
         Enum:
         - Accidental building fire smoke
         - Accidental fire smoke, grass
@@ -17458,7 +17407,7 @@ PropDefinitions:
         - Work-related smoke, plumbing
         - Work-related smoke, soldering/welding
         - Tobacco smoke, NOS
-        Req: 'False'
+        Req: False
     type_of_tobacco_used:
         Desc: 'The text term used to describe the specific type of tobacco used by
             the patient.
@@ -17471,17 +17420,17 @@ PropDefinitions:
         - Other
         - Pipe
         - Smokeless Tobacco
-        Req: 'False'
+        Req: False
     undescended_testis_corrected:
         Desc: Indicates whether the patient's undescended testis was corrected.
         Enum:
         - true
         - false
         - Not Reported
-        Req: 'False'
+        Req: False
     undescended_testis_corrected_age:
         Desc: The patient's age when their undescended testis was corrected.
-        Req: 'False'
+        Req: False
         Type: integer
     undescended_testis_corrected_laterality:
         Desc: Descrives the lateral location of the patient's undescended testis correction.
@@ -17490,7 +17439,7 @@ PropDefinitions:
         - Right
         - Bilateral
         - Not Reported
-        Req: 'False'
+        Req: False
     undescended_testis_corrected_method:
         Desc: Describes the method used to correct the patient's undescended testis.
         Enum:
@@ -17499,14 +17448,14 @@ PropDefinitions:
         - Hormones
         - Testis Removed
         - Not Reported
-        Req: 'False'
+        Req: False
     undescended_testis_history:
         Desc: The persistent failure of one or both testes to descend into the scrotum.
         Enum:
         - true
         - false
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
         -   Code: C12326
             Origin: NCIt
@@ -17518,28 +17467,28 @@ PropDefinitions:
         - Right
         - Bilateral
         - Not Reported
-        Req: 'False'
+        Req: False
     uniport_database_version:
         Desc: Name and version of the Uniprot Refseq database used in the data analysis
             pipeline
-        Req: 'False'
+        Req: False
         Type: string
     unshared_log2_ratio:
         Desc: Average log-ratio of sample reporter-ion to common reference of peptide
             ions of unshared peptides only associated with the gene in acquisitions
             from a specific biological sample.
-        Req: 'False'
+        Req: False
         Type: double
     unshared_log_ratio:
         Desc: Average log-ratio of sample reporter-ion to common reference of peptide
             ions of unshared peptides only associated with the gene in acquisitions
             from a specific biological sample.
-        Req: 'False'
+        Req: False
         Type: number
     unshared_peptide:
         Desc: Number of unshared peptide sequences associated with the gene in acquisitions
             from a specific analytical sample
-        Req: 'False'
+        Req: False
         Type: number
     vascular_invasion_present:
         Desc: The yes/no indicator to ask if large vessel or venous invasion was detected
@@ -17550,9 +17499,9 @@ PropDefinitions:
         - Unknown
         - Not Reported
         - Not Allowed To Collect
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 64358
+        -   Code: '64358'
             Origin: caDSR
             Value: vascular_invasion_present
     vascular_invasion_type:
@@ -17565,16 +17514,14 @@ PropDefinitions:
         - No Vascular Invasion
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3168001
+        -   Code: '3168001'
             Origin: caDSR
             Value: vascular_invasion_type
     viral_hepatitis_serologies:
-        Desc: 'Text term that describes the kind of serological laboratory test used
-            to determine the patient''s hepatitus status.
-
-            '
+        Desc: Text term that describes the kind of serological laboratory test used
+            to determine the patient's hepatitus status.
         Enum:
         - HBV Core Antibody
         - HBV DNA
@@ -17586,9 +17533,9 @@ PropDefinitions:
         - Hepatitis C Virus RNA
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4395982
+        -   Code: '4395982'
             Origin: caDSR
             Value: viral_hepatitis_serologies
     vital_status:
@@ -17598,18 +17545,18 @@ PropDefinitions:
         - Dead
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5
+        -   Code: '5'
             Origin: caDSR
             Value: vital_status
     weeks_gestation_at_birth:
         Desc: Numeric value used to describe the number of weeks starting from the
             approximate date of the biological mother's last menstrual period and
             ending with the birth of the patient.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2737369
+        -   Code: '2737369'
             Origin: caDSR
             Value: weeks_gestation_at_birth
         Type: number
@@ -17635,17 +17582,17 @@ PropDefinitions:
         - '7'
         - '8'
         - '9'
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3648744
+        -   Code: '3648744'
             Origin: caDSR
             Value: weiss_assessment_score
     well_number:
         Desc: Numeric value that represents the the well location within a plate for
             the analyte or aliquot from the sample.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 5432613
+        -   Code: '5432613'
             Origin: caDSR
             Value: well_number
         Type: string
@@ -17661,7 +17608,7 @@ PropDefinitions:
         - Grade Not Assigned
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     who_nte_grade:
         Desc: The WHO (World Health Organization) grading classification of Neuroendocrine
             Tumors.
@@ -17672,7 +17619,7 @@ PropDefinitions:
         - GX
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
     wilms_tumor_histologic_subtype:
         Desc: The text term used to describe the classification of Wilms tumors distinguishing
             between favorable and unfavorable histologic groups.
@@ -17681,67 +17628,67 @@ PropDefinitions:
         - Unfavorable
         - Unknown
         - Not Reported
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 4358735
+        -   Code: '4358735'
             Origin: caDSR
             Value: wilms_tumor_histologic_subtype
     workflow_metadata.analytical_fraction:
         Desc: Type of peptide or protein enrichment
-        Req: 'False'
+        Req: False
         Type: string
     workflow_metadata.experiment_type:
         Desc: General strategy used for differential analysis
-        Req: 'False'
+        Req: False
         Type: string
     workflow_metadata.instrument:
         Desc: Make and model of the mass spectrometry instrument
-        Req: 'False'
+        Req: False
         Type: string
     workflow_metadata.protocol_id:
-        Req: 'False'
+        Req: False
         Type: string
     workflow_metadata.protocol_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     workflow_metadata.study_id:
-        Req: 'False'
+        Req: False
         Type: string
     workflow_metadata.study_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     workflow_metadata.submitter_id_name:
-        Req: 'False'
+        Req: False
         Type: string
     workflow_metadata_id:
-        Req: 'False'
+        Req: False
         Type: string
     workflow_metadata_submitter_id:
-        Req: 'False'
+        Req: False
         Type: string
     year_of_birth:
         Desc: Numeric value to represent the calendar year in which an individual
             was born.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2896954
+        -   Code: '2896954'
             Origin: caDSR
             Value: year_of_birth
         Type: integer
     year_of_death:
         Desc: Numeric value to represent the year of the death of an individual.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2897030
+        -   Code: '2897030'
             Origin: caDSR
             Value: year_of_death
         Type: integer
     year_of_diagnosis:
         Desc: Numeric value to represent the year of an individual's initial pathologic
             diagnosis of cancer.
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 2896960
+        -   Code: '2896960'
             Origin: caDSR
             Value: year_of_diagnosis
         Type: integer
@@ -17750,9 +17697,9 @@ PropDefinitions:
             has been smoking.
 
             '
-        Req: 'False'
+        Req: False
         Term:
-        -   Code: 3137957
+        -   Code: '3137957'
             Origin: caDSR
             Value: years_smoked
         Type: number
