@@ -1,3 +1,6 @@
 [submodule "pdc-public"]
 	path = pdc-public
 	url = https://github.com/esacinc/PDC-Public
+[submodule "bento-mdf"]
+	path = bento-mdf
+	url = https://github.com/CBIIT/bento-mdf
